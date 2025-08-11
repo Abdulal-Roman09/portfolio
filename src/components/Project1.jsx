@@ -141,10 +141,11 @@ export default function Project1() {
                   width={1200}
                   height={800}
                   alt={title}
-                  className={`h-full w-full object-cover transition-transform duration-500 ease-linear ${
+                  className={`h-full w-full object-contain object-center transition-transform duration-500 ease-linear ${
                     index === currentSlider ? "scale-100" : "scale-105"
                   }`}
                 />
+
                 {/* <div className="absolute inset-0 flex flex-col p-5 text-center text-white drop-shadow-lg">
             <div className="mb-0 mt-auto rounded-md bg-white/40 p-3 backdrop-blur-lg">
               <div className="mb-3 overflow-hidden text-xl font-semibold lg:text-3xl text-emerald-500">

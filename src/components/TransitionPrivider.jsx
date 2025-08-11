@@ -27,7 +27,7 @@ const TransitionPrivider = ({ children }) => {
         />
         <Navber />
       
-        <div className="flex-grow flex justify-center items-center p-5 container mx-auto">
+        <div className="flex-grow flex justify-center items-center px-4  container mx-auto">
           {children}
         </div>
       </motion.div>

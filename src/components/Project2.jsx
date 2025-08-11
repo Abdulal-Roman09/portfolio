@@ -92,57 +92,73 @@ export default function Project2() {
 
   return (
     <div className="pr-2">
-   <div className="container mx-auto p-6 bg-white rounded-lg shadow-2xl ">
-  <div className="text-center mb-6">
-    <h1 className="text-4xl font-extrabold text-indigo-700 mb-2">Project 2</h1>
-    <p className="text-xl font-semibold text-gray-700">Hostel Management App</p>
-  </div>
+      <div className="container mx-auto p-6 bg-white rounded-lg shadow-2xl ">
+        <div className="text-center mb-6">
+          <h1 className="text-4xl font-extrabold text-indigo-700 mb-2">
+            Project 2
+          </h1>
+          <p className="text-xl font-semibold text-gray-700">
+            Hostel Management App
+          </p>
+        </div>
 
-  <div className="space-y-6 text-gray-800">
-    <div>
-      <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">Name:</h2>
-      <p className="text-md">Comprehensive Hostel Management System</p>
-    </div>
+        <div className="space-y-6 text-gray-800">
+          <div>
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">
+              Name:
+            </h2>
+            <p className="text-md">Comprehensive Hostel Management System</p>
+          </div>
 
-    <div>
-      <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">Description:</h2>
-      <p className="text-md leading-relaxed">
-        A comprehensive hostel management system designed to streamline meal planning, membership tracking, and payment processing. Built with a clean, responsive interface focusing on user-friendly navigation. Features include real-time meal updates, secure payment integration, and role-based dashboards for efficient management by hostel administrators and residents.
-      </p>
-    </div>
+          <div>
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">
+              Description:
+            </h2>
+            <p className="text-md leading-relaxed">
+              A comprehensive hostel management system designed to streamline
+              meal planning, membership tracking, and payment processing. Built
+              with a clean, responsive interface focusing on user-friendly
+              navigation. Features include real-time meal updates, secure
+              payment integration, and role-based dashboards for efficient
+              management by hostel administrators and residents.
+            </p>
+          </div>
 
-    <div>
-      <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">Technologies:</h2>
-      <p className="text-md italic text-indigo-600">
-        React, Firebase Authentication, Real-time Database, Dynamic Dashboards
-      </p>
-    </div>
-  </div>
-</div>
+          <div>
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">
+              Technologies:
+            </h2>
+            <p className="text-md italic text-indigo-600">
+              React, Firebase Authentication, Real-time Database, Dynamic
+              Dashboards
+            </p>
+          </div>
+        </div>
+      </div>
 
-
-
-<div className="pt-16 flex w-full flex-row-reverse justify-between">
-  <div className="relative h-[540px] w-full overflow-hidden rounded-lg before:bg-black/50 sm:h-[400px] md:h-[540px] lg:gap-10">
-    {carouselItems.map((slide, index) => {
-      const { img, title, des } = slide;
-      return (
-        <div
-          key={`index_${index}`}
-          className={`absolute inset-0 transition-opacity duration-500 ease-linear ${
-            index === currentSlider ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
-        >
-          <Image
-            src={img}
-            width={1200}
-            height={800}
-            alt={title}
-            className={`h-full w-full object-cover transition-transform duration-500 ease-linear ${
-              index === currentSlider ? "scale-100" : "scale-105"
-            }`}
-          />
-          {/* <div className="absolute inset-0 flex flex-col p-5 text-center text-white drop-shadow-lg">
+      <div className="pt-16 flex w-full flex-row-reverse justify-between">
+        <div className="relative h-[540px] w-full overflow-hidden rounded-lg before:bg-black/50 sm:h-[400px] md:h-[540px] lg:gap-10">
+          {carouselItems.map((slide, index) => {
+            const { img, title, des } = slide;
+            return (
+              <div
+                key={`index_${index}`}
+                className={`absolute inset-0 transition-opacity duration-500 ease-linear ${
+                  index === currentSlider
+                    ? "opacity-100 visible"
+                    : "opacity-0 invisible"
+                }`}
+              >
+                <Image
+                  src={img}
+                  width={1200}
+                  height={800}
+                  alt={title}
+                  className={`h-full w-full object-contain object-center transition-transform duration-500 ease-linear ${
+                    index === currentSlider ? "scale-100" : "scale-105"
+                  }`}
+                />
+                {/* <div className="absolute inset-0 flex flex-col p-5 text-center text-white drop-shadow-lg">
             <div className="mb-0 mt-auto rounded-md bg-white/40 p-3 backdrop-blur-lg">
               <div className="mb-3 overflow-hidden text-xl font-semibold lg:text-3xl text-orange-500">
                 <h1
@@ -164,32 +180,32 @@ export default function Project2() {
               </div>
             </div>
           </div> */}
+              </div>
+            );
+          })}
         </div>
-      );
-    })}
-  </div>
 
-  <div className="flex flex-col items-center justify-center gap-3 p-2">
-    {carouselItems.map((slide, index) => {
-      const { img, title } = slide;
-      return (
-        <Image
-          onClick={() => setCurrentSlider(index)}
-          src={img}
-          key={index}
-          width={1200}
-          height={600}
-          className={`h-6 w-10 bg-black/20 sm:h-8 md:h-12 md:w-20 ${
-            currentSlider === index
-              ? "opacity-100 ring ring-sky-500"
-              : "opacity-60"
-          } box-content cursor-pointer rounded-md md:rounded-lg`}
-          alt={title}
-        />
-      );
-    })}
-  </div>
-</div>
+        <div className="flex flex-col items-center justify-center gap-3 p-2">
+          {carouselItems.map((slide, index) => {
+            const { img, title } = slide;
+            return (
+              <Image
+                onClick={() => setCurrentSlider(index)}
+                src={img}
+                key={index}
+                width={1200}
+                height={600}
+                className={`h-6 w-10 bg-black/20 sm:h-8 md:h-12 md:w-20 ${
+                  currentSlider === index
+                    ? "opacity-100 ring ring-sky-500"
+                    : "opacity-60"
+                } box-content cursor-pointer rounded-md md:rounded-lg`}
+                alt={title}
+              />
+            );
+          })}
+        </div>
+      </div>
 
       <div className="space-y-6">
         <div className="flex  items-center justify-center flex-col py-5">
@@ -217,7 +233,7 @@ export default function Project2() {
           </div>
 
           {/* Technology Used */}
-           <div className="text-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
+          <div className="text-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
               Technologies Used
             </h3>
