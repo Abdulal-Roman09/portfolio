@@ -49,7 +49,7 @@ export default function ContactPage() {
 
   return (
     <div>
-      <div className="container mx-auto">
+      <div className="container mx-auto h-screen flex items-center">
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Left side */}
           <div className="space-y-8">

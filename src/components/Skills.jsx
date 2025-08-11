@@ -89,7 +89,8 @@ const Skills = () => {
       className="py-20 bg-white dark:bg-slate-900 sm:px-2"
       ref={containerRef}
     >
-      <div className="mx-auto container">
+    <div className="src/app/contact/page.jsx">
+        <div className="mx-auto container">
         <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-900 dark:text-white">
           Skills & Technologies
         </h2>
@@ -110,6 +111,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
+    </div>
     </section>
   );
 };
