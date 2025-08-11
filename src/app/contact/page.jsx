@@ -48,9 +48,10 @@ export default function ContactPage() {
   };
 
   return (
-    <div>
-      <div className="container mx-auto h-screen flex items-center">
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+    <div className="bg-gray-50">
+      <div className=" h-screen flex items-center w-screen ">
+        <div className="container mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Left side */}
           <div className="space-y-8">
             <div>
@@ -191,6 +192,8 @@ export default function ContactPage() {
             </Card>
           </form>
         </div>
+        </div>
+      
       </div>
     </div>
   );

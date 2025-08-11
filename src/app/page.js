@@ -5,6 +5,7 @@ import Project from "./projects/page";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Banner from "@/components/Banner";
+import ContactPage from "./contact/page";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
 
         <Education />
         <Project />
+        <ContactPage/>
       </div>
     </>
   );
