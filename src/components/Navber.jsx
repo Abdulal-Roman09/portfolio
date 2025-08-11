@@ -83,10 +83,12 @@ export default function Navber() {
 
           {/* Logo */}
          
-     <Link href="/"
+    <div className="pr-2">
+       <Link href="/"
      className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center">
        <span className="text-white mr-1 pl-2">Roman</span>
-       <span className="w-12 h-8 rounded bg-white text-blac flex items-center pl-1">.dev</span></Link>
+       <span className="w-12 h-8 rounded bg-white text-blac flex items-center pl-1 ">.dev</span></Link>
+    </div>
        
         </div>
 

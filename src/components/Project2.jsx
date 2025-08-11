@@ -94,7 +94,7 @@ export default function Project2() {
     <div className="pr-2">
       <div className="container mx-auto p-6 bg-white rounded-lg shadow-2xl ">
         <div className="text-center mb-6">
-          <h1 className="text-4xl font-extrabold text-indigo-700 mb-2">
+          <h1 className="text-4xl font-extrabold text-blue-700 mb-2">
             Project 2
           </h1>
           <p className="text-xl font-semibold text-gray-700">
@@ -104,14 +104,14 @@ export default function Project2() {
 
         <div className="space-y-6 text-gray-800">
           <div>
-            <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-blue-500 inline-block pb-1">
               Name:
             </h2>
             <p className="text-md">Comprehensive Hostel Management System</p>
           </div>
 
           <div>
-            <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-blue-500 inline-block pb-1">
               Description:
             </h2>
             <p className="text-md leading-relaxed">
@@ -125,10 +125,10 @@ export default function Project2() {
           </div>
 
           <div>
-            <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-blue-500 inline-block pb-1">
               Technologies:
             </h2>
-            <p className="text-md italic text-indigo-600">
+            <p className="text-md italic text-blue-600">
               React, Firebase Authentication, Real-time Database, Dynamic
               Dashboards
             </p>
