@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import Navber from "./Navber";
 import { usePathname } from "next/navigation";
+import Footer from "./Fotter";
 
 const TransitionPrivider = ({ children }) => {
   const pathName = usePathname();
@@ -30,6 +31,7 @@ const TransitionPrivider = ({ children }) => {
         <div className="flex-grow flex justify-center items-center px-4  container mx-auto">
           {children}
         </div>
+        <Footer/>
       </motion.div>
     </AnimatePresence>
   );

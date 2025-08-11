@@ -3,6 +3,7 @@ import React from "react";
 import About from "./about/page";
 import Project from "./projects/page";
 import Skills from "@/components/Skills";
+import Education from "@/components/Education";
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
       <About />
       <Skills />
       <Project />
+      <Education/>
+    
     </div>
   );
 };
