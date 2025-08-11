@@ -8,14 +8,16 @@ import Banner from "@/components/Banner";
 
 const Home = () => {
   return (
-    <div className="py-20">
-     
-      <About />
-      <Skills />
-      <Project />
-      <Education/>
-    
-    </div>
+    <>
+      <div className="py-20">
+        <Banner />
+        <About />
+        <Skills />
+
+        <Education />
+        <Project />
+      </div>
+    </>
   );
 };
 

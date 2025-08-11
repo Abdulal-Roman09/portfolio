@@ -4,7 +4,7 @@ import React from 'react'
 
 const Project = () => {
   return (
-    <div>
+    <div className='container mx-auto'>
       <p className='text-3xl font-bold py-20 text-center'>All Project</p>
       <Project1/>
       <div className='border-1 border-gray-400 w-full mt-10 mb-10'></div>

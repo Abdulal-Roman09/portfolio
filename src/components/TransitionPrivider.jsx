@@ -28,7 +28,7 @@ const TransitionPrivider = ({ children }) => {
           transition={{ duration: 0.3, ease: "easeInOut" }}
         />
         <Navber />
-      <Banner/>
+     
         <div className="flex-grow flex justify-center items-center px-4  container mx-auto">
           {children}
         </div>

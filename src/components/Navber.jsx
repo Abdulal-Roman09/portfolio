@@ -118,7 +118,7 @@ export default function Navber() {
         {/* Right side */}
         <div className="flex items-center gap-2">
           <Button asChild size="sm" className="text-sm" variant="">
-            <a href="#">Download CV</a>
+            <a href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view?usp=sharing">Download CV</a>
           </Button>
         </div>
       </div>

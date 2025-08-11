@@ -14,7 +14,7 @@ const Education = () => {
           <div className="bg-card rounded-lg p-6 border shadow-sm">
             <div className="flex items-start justify-between mb-4">
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2">Bachelor of Science in Engineering (BSc Eng)</h3>
+                <h3 className="text-xl font-semibold mb-2">Bachelor of Science in Engineering (BSc  Engineering)</h3>
                 <p className="text-muted-foreground mb-2">Computer Science & Engineering</p>
                 <p className="text-sm text-muted-foreground">Currently Pursuing</p>
               </div>
