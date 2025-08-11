@@ -1,3 +1,5 @@
+// Navber.jsx
+
 import Image from "next/image";
 import logo from "../../public/logo.png";
 import { Button } from "@/components/ui/button";
@@ -25,8 +27,8 @@ export default function Navber() {
   const pathname = usePathname();
 
   return (
-    <header className="border-b px-4 md:px-6">
-      <div className="flex h-16 items-center justify-between gap-4">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b bg-white">
+      <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 md:px-6">
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu */}
@@ -79,8 +81,18 @@ export default function Navber() {
           </Popover>
 
           {/* Logo */}
-          <a href="/" className="text-primary hover:text-primary/90">
-            <Image src={logo} alt="Logo" width={24} height={24} />
+          <a
+            href="/"
+            className="text-primary hover:text-primary/90 inline-block w-24 sm:w-32 md:w-40 lg:w-48"
+          >
+            <Image
+              src={logo}
+              alt="Logo"
+              width={192}
+              height={160}
+              className="w-full h-auto"
+              priority
+            />
           </a>
         </div>
 
