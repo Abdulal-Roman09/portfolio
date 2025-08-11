@@ -3,7 +3,7 @@ import { FaCode, FaPalette, FaMobileAlt, FaGlobe } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-100">
     <div className="h-screen flex items-center  w-screen">
       <div className="container mx-auto">
         <section className=" py-10 ">

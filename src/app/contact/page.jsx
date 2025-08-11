@@ -48,7 +48,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-100">
       <div className=" h-screen flex items-center w-screen ">
         <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-8 items-start">
