@@ -6,7 +6,7 @@ import Skills from "@/components/Skills";
 
 const Home = () => {
   return (
-    <div>
+    <div className="py-20">
       <About />
       <Skills />
       <Project />
