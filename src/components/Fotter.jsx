@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="relative mx-auto container py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
               Your Portfolio
             </h3>
             <p className="text-white text-sm leading-relaxed">
@@ -45,7 +45,7 @@ export default function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group p-2 rounded-full bg-slate-800/50 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-110"
+                  className="group p-2 rounded-full bg-slate-800/50 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 transition-all duration-300 transform hover:scale-110"
                   aria-label={label}
                 >
                   <Icon className="w-4 h-4 text-slate-400 group-hover:text-white transition-colors" />
@@ -95,7 +95,7 @@ export default function Footer() {
 
           <button
             onClick={scrollToTop}
-            className="group flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 text-slate-400 hover:text-white transition-all duration-300 text-sm"
+            className="group flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/50 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-700 text-slate-400 hover:text-white transition-all duration-300 text-sm"
           >
             <span>Back to top</span>
             <ArrowUp className="w-4 h-4 group-hover:animate-bounce" />
