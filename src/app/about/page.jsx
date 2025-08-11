@@ -3,7 +3,7 @@ import { FaCode, FaPalette, FaMobileAlt, FaGlobe } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="container mx-auto ">
+    <section className="container mx-auto py-10 ">
       {/* About Section */}
       <div className="mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
