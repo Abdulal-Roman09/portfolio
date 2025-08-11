@@ -15,15 +15,15 @@ import {
 import { usePathname } from "next/navigation";
 
 const navigationLinks = [
-  { href: "#", label: "Home", active: true },
-    { href: "/about", label: "About" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
   { href: "/contact", label: "ContactMe" },
-
 ];
 
 export default function Navber() {
-   const pathname = usePathname();
+  const pathname = usePathname();
+
   return (
     <header className="border-b px-4 md:px-6">
       <div className="flex h-16 items-center justify-between gap-4">
@@ -44,65 +44,70 @@ export default function Navber() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path d="M4 5h16" />
-                  <path d="M4 12h16" />
-                  <path d="M4 19h16" />
+                  <path d="M3 6h14" />
+                  <path d="M3 12h14" />
+                  <path d="M3 18h14" />
                 </svg>
               </Button>
             </PopoverTrigger>
             <PopoverContent align="start" className="w-36 p-1 md:hidden">
               <NavigationMenu className="max-w-none *:w-full">
                 <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
-                  {navigationLinks.map((link, index) => (
-                    <NavigationMenuItem key={index} className="w-full">
-                      <NavigationMenuLink
-                        href={link.href}
-                        className={`py-1.5 ${
-                          link.active
-                            ? "text-primary "
-                            : "text-muted-foreground hover:text-primary"
-                        }`}
-                      >
-                        {link.label}
-                      </NavigationMenuLink>
-                    </NavigationMenuItem>
-                  ))}
+                  {navigationLinks.map((link) => {
+                    const isActive = pathname === link.href;
+                    return (
+                      <NavigationMenuItem key={link.href} className="w-full">
+                        <NavigationMenuLink
+                          href={link.href}
+                          className={`py-1.5 block w-full text-left ${
+                            isActive
+                              ? "text-primary font-semibold"
+                              : "text-muted-foreground hover:text-primary"
+                          }`}
+                        >
+                          {link.label}
+                        </NavigationMenuLink>
+                      </NavigationMenuItem>
+                    );
+                  })}
                 </NavigationMenuList>
               </NavigationMenu>
             </PopoverContent>
           </Popover>
 
           {/* Logo */}
-          <a href="#" className="text-primary hover:text-primary/90">
+          <a href="/" className="text-primary hover:text-primary/90">
             <Image src={logo} alt="Logo" width={24} height={24} />
           </a>
         </div>
 
         {/* Center items */}
-          <div className="max-md:hidden">
-      <NavigationMenu>
-        <NavigationMenuList className="gap-2">
-          {navigationLinks.map((link, index) => {
-            const isActive = pathname === link.href;
-            return (
-              <NavigationMenuItem key={index}>
-                <NavigationMenuLink
-                  href={link.href}
-                  className={`py-1.5 font-medium ${
-                    isActive
-                      ? "bg-black px-5 py-2 rounded text-white"
-                      : "text-muted-foreground hover:text-primary"
-                  }`}
-                >
-                  {link.label}
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            );
-          })}
-        </NavigationMenuList>
-      </NavigationMenu>
-    </div>
+        <div className="max-md:hidden">
+          <NavigationMenu>
+            <NavigationMenuList className="gap-2">
+              {navigationLinks.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <NavigationMenuItem key={link.href}>
+                    <NavigationMenuLink
+                      href={link.href}
+                      className={`py-1.5 font-medium rounded px-4 ${
+                        isActive
+                          ? "bg-black text-white"
+                          : "text-muted-foreground hover:text-primary"
+                      }`}
+                    >
+                      {link.label}
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                );
+              })}
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
 
         {/* Right side */}
         <div className="flex items-center gap-2">

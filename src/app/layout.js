@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TransitionPrivider from "@/components/TransitionPrivider";
+import ToastProvider from "@/components/ToastProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,12 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-      <TransitionPrivider>
-        {children}
-      </TransitionPrivider>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <TransitionPrivider>
+          {children}
+          <ToastProvider />
+        </TransitionPrivider>
       </body>
     </html>
   );

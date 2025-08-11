@@ -92,7 +92,7 @@ export default function Project1() {
 
   return (
     <div className="pr-2">
-      <div className="contaner mx-auto p-6 bg-white rounded-lg shadow-md px-2">
+      <div className="contaner mx-auto p-6 bg-white rounded-lg shadow-md px-4">
         <div className="text-center mb-4">
           <h1 className="text-3xl font-bold mb-2">Project 1</h1>
           <p className="text-lg font-semibold">Product Recommendation Site</p>

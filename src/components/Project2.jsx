@@ -92,26 +92,28 @@ export default function Project2() {
 
   return (
     <div className="pr-2">
-    <div className="contaner mx-auto p-6 bg-white rounded-lg shadow-md px-2">
-  <div className="text-center mb-4">
-    <h1 className="text-3xl font-bold mb-2">Project 2</h1>
-    <p className="text-lg font-semibold">Hostel Management App</p>
+   <div className="container mx-auto p-6 bg-white rounded-lg shadow-lg ">
+  <div className="text-center mb-6">
+    <h1 className="text-4xl font-extrabold text-indigo-700 mb-2">Project 2</h1>
+    <p className="text-xl font-semibold text-gray-700">Hostel Management App</p>
   </div>
 
-  <div className="space-y-3">
+  <div className="space-y-6 text-gray-800">
     <div>
-      <h2 className="font-semibold">Name:</h2>
-      <p>Comprehensive Hostel Management System</p>
+      <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">Name:</h2>
+      <p className="text-md">Comprehensive Hostel Management System</p>
     </div>
+
     <div>
-      <h2 className="font-semibold">Description:</h2>
-      <p>
+      <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">Description:</h2>
+      <p className="text-md leading-relaxed">
         A comprehensive hostel management system designed to streamline meal planning, membership tracking, and payment processing. Built with a clean, responsive interface focusing on user-friendly navigation. Features include real-time meal updates, secure payment integration, and role-based dashboards for efficient management by hostel administrators and residents.
       </p>
     </div>
+
     <div>
-      <h2 className="font-semibold">Technologies:</h2>
-      <p>
+      <h2 className="font-semibold text-lg mb-1 border-b-2 border-indigo-500 inline-block pb-1">Technologies:</h2>
+      <p className="text-md italic text-indigo-600">
         React, Firebase Authentication, Real-time Database, Dynamic Dashboards
       </p>
     </div>
@@ -119,8 +121,9 @@ export default function Project2() {
 </div>
 
 
+
 <div className="pt-16 flex w-full flex-row-reverse justify-between">
-  <div className="relative h-[540px] w-full overflow-hidden rounded-lg before:bg-black/50 sm:h-[600px] md:h-[540px] lg:gap-10">
+  <div className="relative h-[540px] w-full overflow-hidden rounded-lg before:bg-black/50 sm:h-[400px] md:h-[540px] lg:gap-10">
     {carouselItems.map((slide, index) => {
       const { img, title, des } = slide;
       return (
