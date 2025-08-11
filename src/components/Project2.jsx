@@ -92,7 +92,7 @@ export default function Project2() {
 
   return (
     <div className="pr-2">
-   <div className="container mx-auto p-6 bg-white rounded-lg shadow-lg ">
+   <div className="container mx-auto p-6 bg-white rounded-lg shadow-2xl ">
   <div className="text-center mb-6">
     <h1 className="text-4xl font-extrabold text-indigo-700 mb-2">Project 2</h1>
     <p className="text-xl font-semibold text-gray-700">Hostel Management App</p>
@@ -142,7 +142,7 @@ export default function Project2() {
               index === currentSlider ? "scale-100" : "scale-105"
             }`}
           />
-          <div className="absolute inset-0 flex flex-col p-5 text-center text-white drop-shadow-lg">
+          {/* <div className="absolute inset-0 flex flex-col p-5 text-center text-white drop-shadow-lg">
             <div className="mb-0 mt-auto rounded-md bg-white/40 p-3 backdrop-blur-lg">
               <div className="mb-3 overflow-hidden text-xl font-semibold lg:text-3xl text-orange-500">
                 <h1
@@ -163,7 +163,7 @@ export default function Project2() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       );
     })}
@@ -217,20 +217,35 @@ export default function Project2() {
           </div>
 
           {/* Technology Used */}
-          <div className="text-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
+           <div className="text-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32">
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
               Technologies Used
             </h3>
-            <div className="flex gap-6 flex-wrap justify-center">
+            <div className="flex gap-6 flex-wrap justify-center items-center">
               {technologies.map((tech) => (
                 <img
                   key={tech.name}
                   src={tech.icon}
                   alt={tech.name}
                   title={tech.name}
-                  className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-20 transition-all"
+                  className="h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 transition-all"
                 />
               ))}
+
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28"
+                fill="none"
+                width="auto"
+                height="auto"
+              >
+                <title>file_type_tailwind</title>
+                <path
+                  d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+                  fill="#44a8b3"
+                />
+              </svg>
             </div>
           </div>
         </div>

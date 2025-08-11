@@ -3,7 +3,7 @@ import { FaCode, FaPalette, FaMobileAlt, FaGlobe } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="container mx-auto px-4 pt-8">
+    <section className="container mx-auto  pt-8">
       {/* About Section */}
       <div className="mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
@@ -14,24 +14,33 @@ const About = () => {
               My Introduction
             </h3>
             <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
-              I'm a passionate frontend developer with 3+ years of experience creating exceptional digital experiences. I specialize in React, Next.js, and modern web technologies to build scalable and performant applications.
+              🎓 BSc in CSE | Faridpur Engineering College <br /> 🌱 Currently learning
+              MERN Stack <br /> 💼 Looking to collaborate on real-world MERN projects
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-300 mb-8">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community.
+              When I'm not coding, you'll find me exploring new technologies,
+              contributing to open source projects, or sharing knowledge with
+              the developer community.
             </p>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-center space-x-3">
                 <FaCode className="h-6 w-6 text-blue-600" />
-                <span className="text-slate-700 dark:text-slate-300">Clean Code</span>
+                <span className="text-slate-700 dark:text-slate-300">
+                  Clean Code
+                </span>
               </div>
-            
+
               <div className="flex items-center space-x-3">
                 <FaMobileAlt className="h-6 w-6 text-teal-600" />
-                <span className="text-slate-700 dark:text-slate-300">Responsive</span>
+                <span className="text-slate-700 dark:text-slate-300">
+                  Responsive
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <FaGlobe className="h-6 w-6 text-green-600" />
-                <span className="text-slate-700 dark:text-slate-300">Web Standards</span>
+                <span className="text-slate-700 dark:text-slate-300">
+                  Web Standards
+                </span>
               </div>
             </div>
           </div>
@@ -39,7 +48,7 @@ const About = () => {
           {/* Image Content */}
           <div className="flex-1 flex justify-center">
             <img
-              src="https://i.ibb.co/BVX3rRjh/farzad-p-x-Sl33-Wxyc-unsplash.jpg"
+              src="https://i.ibb.co/V0SyTQ9L/70469.jpg"
               alt="Workspace"
               className="rounded-2xl shadow-2xl w-full max-w-md object-cover"
             />

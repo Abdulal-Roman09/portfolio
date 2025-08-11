@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TransitionPrivider from "@/components/TransitionPrivider";
 import ToastProvider from "@/components/ToastProvider";
+import SocialSidebar from "@/components/SocialSidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <TransitionPrivider>
           {children}
           <ToastProvider />
+          <SocialSidebar/>
         </TransitionPrivider>
       </body>
     </html>

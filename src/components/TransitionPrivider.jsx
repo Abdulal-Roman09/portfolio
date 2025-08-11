@@ -1,25 +1,36 @@
 "use client";
 
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import Navber from "./Navber";
-import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const TransitionPrivider = ({ children }) => {
+  const pathName = usePathname();
+
   return (
-    <AnimatePresence>
-      <div>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={pathName} 
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="min-h-screen flex flex-col"
+      >
+      
         <motion.div
-          className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
-          animate={{
-            height: "0vh",
-          }}
-          exit={{height:"100vh"}}
-          transition={{duration:0.3,ease:"easeInOut"}}
+          className="fixed h-screen w-screen bg-black rounded-b-[100px] z-40"
+          animate={{ height: ["100vh", "0vh"] }}
+          exit={{ height: "100vh" }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
         />
         <Navber />
-        <div className="p-5 container mx-auto">{children}</div>
-      </div>
+      
+        <div className="flex-grow flex justify-center items-center p-5 container mx-auto">
+          {children}
+        </div>
+      </motion.div>
     </AnimatePresence>
   );
 };

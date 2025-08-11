@@ -92,7 +92,7 @@ export default function Project1() {
 
   return (
     <div className="pr-2">
-      <div className="contaner mx-auto p-6 bg-white rounded-lg shadow-md px-4">
+      <div className="contaner mx-auto p-6 bg-white rounded-lg shadow-2xl px-4">
         <div className="text-center mb-4">
           <h1 className="text-3xl font-bold mb-2">Project 1</h1>
           <p className="text-lg font-semibold">Product Recommendation Site</p>
@@ -123,27 +123,29 @@ export default function Project1() {
         </div>
       </div>
 
-<div className="pt-16 flex w-full flex-row-reverse justify-between">
-  <div className="relative h-[540px] w-full overflow-hidden rounded-lg before:bg-black/50 sm:h-[600px] md:h-[540px] lg:gap-10">
-    {carouselItems.map((slide, index) => {
-      const { img, title, des } = slide;
-      return (
-        <div
-          key={`index_${index}`}
-          className={`absolute inset-0 transition-opacity duration-500 ease-linear ${
-            index === currentSlider ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
-        >
-          <Image
-            src={img}
-            width={1200}
-            height={800}
-            alt={title}
-            className={`h-full w-full object-cover transition-transform duration-500 ease-linear ${
-              index === currentSlider ? "scale-100" : "scale-105"
-            }`}
-          />
-          <div className="absolute inset-0 flex flex-col p-5 text-center text-white drop-shadow-lg">
+      <div className="pt-16 flex w-full flex-row-reverse justify-between">
+        <div className="relative h-[540px] w-full overflow-hidden rounded-lg before:bg-black/50 sm:h-[600px] md:h-[540px] lg:gap-10">
+          {carouselItems.map((slide, index) => {
+            const { img, title, des } = slide;
+            return (
+              <div
+                key={`index_${index}`}
+                className={`absolute inset-0 transition-opacity duration-500 ease-linear ${
+                  index === currentSlider
+                    ? "opacity-100 visible"
+                    : "opacity-0 invisible"
+                }`}
+              >
+                <Image
+                  src={img}
+                  width={1200}
+                  height={800}
+                  alt={title}
+                  className={`h-full w-full object-cover transition-transform duration-500 ease-linear ${
+                    index === currentSlider ? "scale-100" : "scale-105"
+                  }`}
+                />
+                {/* <div className="absolute inset-0 flex flex-col p-5 text-center text-white drop-shadow-lg">
             <div className="mb-0 mt-auto rounded-md bg-white/40 p-3 backdrop-blur-lg">
               <div className="mb-3 overflow-hidden text-xl font-semibold lg:text-3xl text-emerald-500">
                 <h1
@@ -164,33 +166,33 @@ export default function Project1() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
+              </div>
+            );
+          })}
         </div>
-      );
-    })}
-  </div>
 
-  <div className="flex flex-col items-center justify-center gap-3 p-2">
-    {carouselItems.map((slide, index) => {
-      const { img, title } = slide;
-      return (
-        <Image
-          onClick={() => setCurrentSlider(index)}
-          src={img}
-          key={index}
-          width={1200}
-          height={600}
-          className={`h-6 w-10 bg-black/20 sm:h-8 md:h-12 md:w-20 ${
-            currentSlider === index
-              ? "opacity-100 ring ring-sky-500"
-              : "opacity-60"
-          } box-content cursor-pointer rounded-md md:rounded-lg`}
-          alt={title}
-        />
-      );
-    })}
-  </div>
-</div>
+        <div className="flex flex-col items-center justify-center gap-3 p-2">
+          {carouselItems.map((slide, index) => {
+            const { img, title } = slide;
+            return (
+              <Image
+                onClick={() => setCurrentSlider(index)}
+                src={img}
+                key={index}
+                width={1200}
+                height={600}
+                className={`h-6 w-10 bg-black/20 sm:h-8 md:h-12 md:w-20 ${
+                  currentSlider === index
+                    ? "opacity-100 ring ring-sky-500"
+                    : "opacity-60"
+                } box-content cursor-pointer rounded-md md:rounded-lg`}
+                alt={title}
+              />
+            );
+          })}
+        </div>
+      </div>
 
       <div className="space-y-6">
         <div className="flex  items-center justify-center flex-col py-5">
@@ -222,16 +224,31 @@ export default function Project1() {
             <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
               Technologies Used
             </h3>
-            <div className="flex gap-6 flex-wrap justify-center">
+            <div className="flex gap-6 flex-wrap justify-center items-center">
               {technologies.map((tech) => (
                 <img
                   key={tech.name}
                   src={tech.icon}
                   alt={tech.name}
                   title={tech.name}
-                  className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-20 transition-all"
+                  className="h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 transition-all"
                 />
               ))}
+
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28"
+                fill="none"
+                width="auto"
+                height="auto"
+              >
+                <title>file_type_tailwind</title>
+                <path
+                  d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+                  fill="#44a8b3"
+                />
+              </svg>
             </div>
           </div>
         </div>

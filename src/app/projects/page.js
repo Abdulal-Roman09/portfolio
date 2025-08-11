@@ -5,6 +5,7 @@ import React from 'react'
 const Project = () => {
   return (
     <div>
+      <p className='text-3xl font-bold pb-10 text-center'>All Project</p>
       <Project1/>
       <div className='border-1 border-gray-400 w-full mt-10 mb-10'></div>
       <Project2/>

@@ -8,6 +8,7 @@ import {
   SiJavascript,
   SiTailwindcss,
   SiMongodb,
+  SiExpress,
 } from "react-icons/si";
 
 const technologies = [
@@ -32,7 +33,7 @@ const technologies = [
     category: "Language",
   },
   {
-    name: "Tailwind CSS",
+    name: "TailwindCSS",
     icon: <SiTailwindcss className="text-teal-400" />,
     category: "Styling",
   },
@@ -47,9 +48,9 @@ const technologies = [
     category: "Database",
   },
   {
-    name: "Git",
-    icon: <FaGitAlt className="text-red-600" />,
-    category: "Tools",
+    name: "Express",
+    icon: <SiExpress className="text-black" />,
+    category: "Backend",
   },
 ];
 
@@ -64,7 +65,7 @@ const Skills = () => {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
 
     tl.to(cards, {
-      scale: 0.6,
+      scale: 0.8,
       duration: 0.5,
       stagger: 0.2,
       ease: "power1.out",
@@ -85,10 +86,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 px-6 bg-white dark:bg-slate-900"
+      className="py-20 bg-white dark:bg-slate-900 sm:px-2"
       ref={containerRef}
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto container">
         <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-900 dark:text-white">
           Skills & Technologies
         </h2>
@@ -96,7 +97,7 @@ const Skills = () => {
           {technologies.map((tech, index) => (
             <div
               key={index}
-              className="skill-card bg-gray-100 dark:bg-slate-800 rounded-xl shadow-md p-6 flex flex-col items-center transition-transform cursor-default relative"
+              className="skill-card bg-gray-100 dark:bg-slate-800 rounded-xl shadow-2xl p-6 flex flex-col items-center transition-transform cursor-default relative"
             >
               <div className="text-6xl mb-4">{tech.icon}</div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">

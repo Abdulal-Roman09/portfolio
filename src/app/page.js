@@ -7,8 +7,8 @@ import Skills from "@/components/Skills";
 const Home = () => {
   return (
     <div>
-      <Skills />
       <About />
+      <Skills />
       <Project />
     </div>
   );
