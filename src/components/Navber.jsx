@@ -15,6 +15,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
@@ -81,19 +82,12 @@ export default function Navber() {
           </Popover>
 
           {/* Logo */}
-          <a
-            href="/"
-            className="text-primary hover:text-primary/90 inline-block w-24 sm:w-32 md:w-40 lg:w-48"
-          >
-            <Image
-              src={logo}
-              alt="Logo"
-              width={192}
-              height={160}
-              className="w-full h-auto"
-              priority
-            />
-          </a>
+         
+     <Link href="/"
+     className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center">
+       <span className="text-white mr-1 pl-2">Roman</span>
+       <span className="w-12 h-8 rounded bg-white text-blac flex items-center pl-1">.dev</span></Link>
+       
         </div>
 
         {/* Center items */}
