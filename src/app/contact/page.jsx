@@ -4,17 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Github, Linkedin, Send, Mail } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Send } from "lucide-react";
 import { useRef } from "react";
-
 import { toast } from "react-toastify";
 
 export default function ContactPage() {
@@ -32,16 +24,11 @@ export default function ContactPage() {
       )
       .then(
         () => {
-          console.log(form.current);
-          toast.success(
-            "✅ Message Sent. Your message has been delivered successfully!"
-          );
+          toast.success("✅ Message Sent. Your message has been delivered successfully!");
           form.current.reset();
         },
         (error) => {
-          toast.error(
-            "❌ Failed to Send. Something went wrong. Please try again later."
-          );
+          toast.error("❌ Failed to Send. Something went wrong. Please try again later.");
           console.error(error);
         }
       );
@@ -49,18 +36,18 @@ export default function ContactPage() {
 
   return (
     <div className="bg-gray-100">
-      <div className=" h-screen flex items-center w-screen ">
+      <div className="h-screen flex items-center w-screen">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            {/* Left side */}
+            
+            {/* Left Side */}
             <div className="space-y-8">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
                   Contact Me
                 </h1>
                 <p className="text-lg text-slate-600 leading-relaxed">
-                  Open to any adventure that involves learning and making cool
-                  stuff!
+                  Open to any adventure that involves learning and making cool stuff!
                 </p>
               </div>
 
@@ -93,7 +80,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Social links */}
+              {/* Social Links */}
               <div className="flex gap-4 pt-4">
                 <Button
                   asChild
@@ -116,7 +103,7 @@ export default function ContactPage() {
                   className="w-12 h-12 rounded-full border-slate-300 hover:bg-slate-900 hover:text-white bg-transparent"
                 >
                   <a
-                    href="abdulal.roman09@gmail.com"
+                    href="mailto:abdulal.roman09@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -140,13 +127,14 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right side - Contact Form */}
+            {/* Right Side - Contact Form */}
             <form ref={form} onSubmit={sendEmail}>
               <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="sr-only">Contact Form</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
+                  
                   <div className="space-y-2">
                     <Label htmlFor="name">Name</Label>
                     <Input
@@ -169,11 +157,12 @@ export default function ContactPage() {
                       className="bg-slate-50 border-slate-200 focus:border-slate-400"
                     />
                   </div>
+
                   <div className="space-y-2">
-                    <Label htmlFor="email">Subject</Label>
+                    <Label htmlFor="subject">Subject</Label>
                     <Input
                       id="subject"
-                      name="subjectl"
+                      name="subject"
                       type="text"
                       placeholder="Your subject"
                       required
