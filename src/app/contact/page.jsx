@@ -75,7 +75,7 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <span className="text-lg text-slate-700">
-                    Cumilla, Chattgong, Bangladesh
+                    Comilla, Chattogram, Bangladesh 
                   </span>
                 </div>
               </div>
