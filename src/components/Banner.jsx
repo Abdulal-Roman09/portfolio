@@ -25,8 +25,8 @@ export default function Banner() {
 
   return (
     <>
-      <div className="bg-[url('https://aakash-sharma.netlify.app/static/media/cloudBg.f28b5c6961fd82be839c.png')] bg-cover bg-center">
-        <section className=" min-h-screen py-10 w-screen">
+      <div className="bg-[url('https://aakash-sharma.netlify.app/static/media/cloudBg.f28b5c6961fd82be839c.png')] bg-cover bg-center ">
+        <section className=" md:min-h-screen h-fit py-10 w-screen flex items-center">
           <div className="flex flex-col md:flex-row items-center justify-between  gap-10 container mx-auto px-4">
             {/* Left Side */}
             <div className="flex-1 space-y-6 text-center md:text-left">
@@ -88,7 +88,7 @@ export default function Banner() {
 
             {/* Right Side */}
             <div className="flex-1 flex justify-center">
-              <div className="relative w-full max-w-[500px] md:max-w-[700px] aspect-square">
+              <div className="relative w-full max-w-[500px] md:max-w-[800px] aspect-square">
                 <Image
                   src="https://aakash-sharma.netlify.app/static/media/webdev.4d72dbba32efee3890cef9bcacce7aa7.svg"
                   alt="Developer working"

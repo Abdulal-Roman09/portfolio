@@ -10,7 +10,7 @@ import ContactPage from "./contact/page";
 const Home = () => {
   return (
     <>
-      <div className="py-20">
+      <div className="py-10">
         <Banner />
         <About />
         <Skills />
