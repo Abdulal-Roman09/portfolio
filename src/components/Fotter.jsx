@@ -1,6 +1,6 @@
 "use client"
 
-import { Github, Linkedin, Twitter, Instagram, Youtube, Heart, ArrowUp } from "lucide-react"
+import { Github, Linkedin,Mail, Heart, ArrowUp } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,12 +10,23 @@ export default function Footer() {
   }
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/yourusername", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/yourusername", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/yourusername", label: "Twitter" },
-    { icon: Instagram, href: "https://instagram.com/yourusername", label: "Instagram" },
-    { icon: Youtube, href: "https://youtube.com/yourchannel", label: "YouTube" },
+    {
+      icon: Github,
+      href: "https://github.com/Abdulal-Roman09",
+      label: "GitHub",
+    },
+    {
+      icon: Mail, 
+      href: "mailto:abdulal.roman09@gmail.com",
+      label: "Gmail",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/abdul-al-roman09/",
+      label: "LinkedIn",
+    },
   ]
+
 
   const quickLinks = [
     { name: "Home", href: "/" },
