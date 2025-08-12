@@ -36,13 +36,13 @@ export default function ContactPage() {
 
   return (
     <div className="bg-gray-100">
-      <div className="h-screen flex items-center w-screen">
-        <div className="container mx-auto">
+      <div className="md:h-screen flex items-center w-screen ">
+        <div className="container mx-auto py-20 md:py-10">
           <div className="grid md:grid-cols-2 gap-8 items-start">
             
             {/* Left Side */}
-            <div className="space-y-8">
-              <div>
+            <div className="space-y-8 px-4">
+              <div className="">
                 <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
                   Contact Me
                 </h1>
@@ -128,8 +128,8 @@ export default function ContactPage() {
             </div>
 
             {/* Right Side - Contact Form */}
-            <form ref={form} onSubmit={sendEmail}>
-              <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
+            <form ref={form} onSubmit={sendEmail} className=" px-4 ">
+              <Card className="shadow-2xl border-0 bg-white/80 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="sr-only">Contact Form</CardTitle>
                 </CardHeader>

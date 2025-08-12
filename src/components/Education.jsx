@@ -2,7 +2,7 @@ import React from 'react'
 
 const Education = () => {
   return (
-     <div className=" h-screen flex items-center sticky w-screen bg-gray-100">
+     <div className=" md:h-screen flex items-center sticky md:w-screen bg-gray-100 h-fit px-4">
       <div className="container mx-auto  py-10 ">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Education</h1>

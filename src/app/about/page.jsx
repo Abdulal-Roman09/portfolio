@@ -4,9 +4,9 @@ import { FaCode, FaPalette, FaMobileAlt, FaGlobe } from "react-icons/fa";
 const About = () => {
   return (
     <div className="bg-gray-100">
-    <div className="h-screen flex items-center  w-screen">
+    <div className="md:h-screen flex items-center  w-screen  h-fit">
       <div className="container mx-auto">
-        <section className=" py-10 ">
+        <section className=" py-20 md:py-10  ">
           {/* About Section */}
           <div className="mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>

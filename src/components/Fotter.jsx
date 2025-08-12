@@ -36,7 +36,7 @@ export default function Footer() {
   ]
 
   return (
-   <footer className="relative bg-black text-white mt-auto overflow-hidden">
+   <footer className="relative bg-black text-white mt-auto overflow-hidden px-4">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,0.1)_50%,transparent_75%)] bg-[length:20px_20px]" />
 

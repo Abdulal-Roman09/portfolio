@@ -86,11 +86,11 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 bg-white dark:bg-slate-900 sm:px-2"
+      className="py-20 bg-white dark:bg-slate-900 px-4"
       ref={containerRef}
     >
     <div className="src/app/contact/page.jsx">
-        <div className="mx-auto container">
+        <div className="mx-auto container h-fit">
         <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-900 dark:text-white">
           Skills & Technologies
         </h2>
