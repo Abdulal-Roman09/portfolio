@@ -107,7 +107,7 @@ export default function Project2() {
             <h2 className="font-semibold text-lg mb-1 border-b-2 border-blue-500 inline-block pb-1">
               Name:
             </h2>
-            <p className="text-md">Comprehensive Hostel Management System</p>
+            <p className="text-md">Kobi Jashimuddin Hall</p>
           </div>
 
           <div>
