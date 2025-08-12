@@ -99,7 +99,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2 text-slate-400 text-sm">
-            <span>© {currentYear} Your Portfolio. Made with</span>
+            <span>© {currentYear} Your Portfolio. Made with Abdul Al Romna </span>
             <Heart className="w-4 h-4 text-red-400 animate-pulse" />
             <span>using Next.js & Tailwind CSS</span>
           </div>
