@@ -1,5 +1,6 @@
 import Project1 from '@/components/Project1'
 import Project2 from '@/components/Project2'
+import Project3 from '@/components/Project3'
 import React from 'react'
 
 const Project = () => {
@@ -10,7 +11,9 @@ const Project = () => {
       <div className='border-1 border-gray-400 w-full mt-10 mb-10'></div>
       <Project2/>
       <div className='border-1 border-gray-400 w-full mt-10 mb-10'></div>
+       <Project3/>
     </div>
+   
   )
 }
 

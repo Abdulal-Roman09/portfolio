@@ -1,36 +1,26 @@
-import { Github, Youtube, Instagram, Twitter, Linkedin } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 
 export default function SocialSidebar() {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/Abdulal-Roman09",
       label: "GitHub",
     },
     {
-      icon: Youtube,
-      href: "https://youtube.com/@yourchannel",
-      label: "YouTube",
-    },
-    {
-      icon: Instagram,
-      href: "https://instagram.com/yourusername",
-      label: "Instagram",
-    },
-    {
-      icon: Twitter,
-      href: "https://twitter.com/yourusername",
-      label: "Twitter",
+      icon: Mail, 
+      href: "mailto:abdulal.roman09@gmail.com",
+      label: "Gmail",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/abdul-al-roman09/",
       label: "LinkedIn",
     },
   ]
 
   return (
- <div className="fixed left-10 bottom-0 z-50 hidden md:flex flex-col items-center gap-4">
+    <div className="fixed left-10 bottom-0 z-50 hidden md:flex flex-col items-center gap-4">
       {/* Social Icons */}
       <div className="flex flex-col gap-4">
         {socialLinks.map((social) => {
