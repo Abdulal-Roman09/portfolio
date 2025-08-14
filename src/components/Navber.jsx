@@ -1,7 +1,5 @@
-// Navber.jsx
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,21 +11,28 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
+import { Menu, Home, User, Code, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 const navigationLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/contact", label: "ContactMe" },
+  { href: "/", label: "Home", icon: Home },
+  { href: "/about", label: "About", icon: User },
+  { href: "/projects", label: "Projects", icon: Code },
+  { href: "/contact", label: "ContactMe", icon: Mail },
 ];
 
 export default function Navber() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b bg-background text-foreground dark:bg-background dark:text-foreground">
+    <motion.header
+      className="fixed top-0 left-0 right-0 z-50 border-b bg-background text-foreground dark:bg-background dark:text-foreground"
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 md:px-6">
-        
+
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu */}
@@ -35,40 +40,30 @@ export default function Navber() {
             <PopoverTrigger asChild>
               <Button
                 aria-label="Toggle menu"
-                className="group size-8 md:hidden  text-white"
+                className="group size-8 md:hidden text-foreground dark:text-foreground"
                 variant="ghost"
                 size="icon"
               >
-                <svg
-                  width={16}
-                  height={16}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M3 6h14" />
-                  <path d="M3 12h14" />
-                  <path d="M3 18h14" />
-                </svg>
+                <Menu size={24} />
               </Button>
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-36 p-1 md:hidden">
+            <PopoverContent align="start" className="w-44 p-1 md:hidden">
               <NavigationMenu className="max-w-none *:w-full">
-                <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
+                <NavigationMenuList className="flex-col items-start gap-1">
                   {navigationLinks.map((link) => {
                     const isActive = pathname === link.href;
+                    const Icon = link.icon;
                     return (
                       <NavigationMenuItem key={link.href} className="w-full">
                         <NavigationMenuLink
                           href={link.href}
-                          className={`py-1.5 block w-full text-left ${
+                          className={`py-2 px-3 flex items-center gap-2 w-full rounded ${
                             isActive
                               ? "text-primary font-semibold dark:bg-blue-500"
-                              : "text-muted-foreground hover:text-primary"
+                              : "text-muted-foreground hover:text-primary hover:bg-muted-foreground/10"
                           }`}
                         >
+                          {/* <Icon size={18} /> */}
                           {link.label}
                         </NavigationMenuLink>
                       </NavigationMenuItem>
@@ -96,19 +91,21 @@ export default function Navber() {
         {/* Center items (desktop menu) */}
         <div className="max-md:hidden">
           <NavigationMenu>
-            <NavigationMenuList className="gap-2">
+            <NavigationMenuList className="flex gap-2">
               {navigationLinks.map((link) => {
                 const isActive = pathname === link.href;
+                const Icon = link.icon;
                 return (
                   <NavigationMenuItem key={link.href}>
                     <NavigationMenuLink
                       href={link.href}
-                      className={`py-1.5 font-medium rounded px-4 ${
+                      className={`py-2 px-4 rounded flex items-center gap-2 font-medium ${
                         isActive
                           ? "bg-primary dark:bg-blue-500 text-primary-foreground"
-                          : "text-muted-foreground hover:text-primary"
+                          : "text-muted-foreground hover:text-primary hover:bg-muted-foreground/10"
                       }`}
                     >
+                      {/* <Icon size={18} /> */}
                       {link.label}
                     </NavigationMenuLink>
                   </NavigationMenuItem>
@@ -131,6 +128,6 @@ export default function Navber() {
           </Button>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
