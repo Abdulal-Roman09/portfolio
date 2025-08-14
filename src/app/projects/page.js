@@ -5,15 +5,22 @@ import React from 'react'
 
 const Project = () => {
   return (
-    <div className='container mx-auto'>
-      <p className='text-3xl font-bold py-20 text-center'>All Project</p>
-      <Project1/>
-      <div className='border-1 border-gray-400 w-full mt-10 mb-10'></div>
-      <Project2/>
-      <div className='border-1 border-gray-400 w-full mt-10 mb-10'></div>
-       <Project3/>
+    <div className='bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 transition-colors duration-300'>
+      <div className='container mx-auto px-4'>
+        <p className='text-4xl font-bold py-20 text-center'>All Projects</p>
+
+        {/* Project 1 */}
+        <Project1 />
+        <div className='border border-gray-400 dark:border-gray-600 w-full my-10'></div>
+
+        {/* Project 2 */}
+        <Project2 />
+        <div className='border border-gray-400 dark:border-gray-600 w-full my-10'></div>
+
+        {/* Project 3 */}
+        <Project3 />
+      </div>
     </div>
-   
   )
 }
 

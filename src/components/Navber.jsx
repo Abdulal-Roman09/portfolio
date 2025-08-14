@@ -11,7 +11,7 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
-import { Menu, Home, User, Code, Mail } from "lucide-react";
+import { Menu, Home, User, Code, Mail, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navigationLinks = [
@@ -120,9 +120,11 @@ export default function Navber() {
           <ThemeToggle />
           <Button
             asChild
-            className="text-sm bg-primary text-primary-foreground dark:bg-blue-500 dark:text-white dark:hover:bg-blue-600"
+            className="text-sm bg-primary text-primary-foreground hover:bg-blue-600
+            dark:bg-blue-600 dark:text-white dark:hover:bg-black"
           >
             <a href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view?usp=sharing">
+            <Download/>
               Download CV
             </a>
           </Button>

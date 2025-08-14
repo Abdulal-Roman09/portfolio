@@ -104,7 +104,7 @@ const Skills = () => {
               <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
                 {tech.name}
               </h3>
-              <span className="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-xs font-medium dark:bg-indigo-800 dark:text-indigo-100">
+              <span className="px-3 py-1 rounded-full bg-indigo-100 text-blue-800 text-xs font-medium dark:bg-blue-800 dark:text-indigo-100">
                 {tech.category}
               </span>
             </div>
