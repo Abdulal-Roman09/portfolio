@@ -35,47 +35,47 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-gray-100">
-      <div className="md:h-screen flex items-center w-screen ">
+    <div className="bg-background text-foreground dark:bg-gray-900 dark:text-foreground">
+      <div className="md:h-screen flex items-center w-screen">
         <div className="container mx-auto py-20 md:py-10">
           <div className="grid md:grid-cols-2 gap-8 items-start">
             
             {/* Left Side */}
             <div className="space-y-8 px-4">
-              <div className="">
-                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                   Contact Me
                 </h1>
-                <p className="text-lg text-slate-600 leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Open to any adventure that involves learning and making cool stuff!
                 </p>
               </div>
 
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-foreground" />
                   </div>
-                  <span className="text-lg text-slate-700">
+                  <span className="text-foreground dark:text-foreground">
                     abdulal.roman09@gmail.com
                   </span>
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">in</span>
+                  <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
+                    <span className="text-foreground dark:text-foreground font-bold">in</span>
                   </div>
-                  <span className="text-lg text-slate-700">
+                  <span className="text-foreground dark:text-foreground">
                     https://www.linkedin.com/in/abdul-al-roman09/
                   </span>
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-foreground" />
                   </div>
-                  <span className="text-lg text-slate-700">
-                    Comilla, Chattogram, Bangladesh 
+                  <span className="text-foreground dark:text-foreground">
+                    Comilla, Chattogram, Bangladesh
                   </span>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                   asChild
                   size="icon"
                   variant="outline"
-                  className="w-12 h-12 rounded-full border-slate-300 hover:bg-slate-900 hover:text-white bg-transparent"
+                  className="w-12 h-12 rounded-full border-muted hover:bg-primary hover:text-primary-foreground bg-transparent"
                 >
                   <a
                     href="https://github.com/Abdulal-Roman09"
@@ -100,7 +100,7 @@ export default function ContactPage() {
                   asChild
                   size="icon"
                   variant="outline"
-                  className="w-12 h-12 rounded-full border-slate-300 hover:bg-slate-900 hover:text-white bg-transparent"
+                  className="w-12 h-12 rounded-full border-muted hover:bg-primary hover:text-primary-foreground bg-transparent"
                 >
                   <a
                     href="mailto:abdulal.roman09@gmail.com"
@@ -114,7 +114,7 @@ export default function ContactPage() {
                   asChild
                   size="icon"
                   variant="outline"
-                  className="w-12 h-12 rounded-full border-slate-300 hover:bg-slate-900 hover:text-white bg-transparent"
+                  className="w-12 h-12 rounded-full border-muted hover:bg-primary hover:text-primary-foreground bg-transparent"
                 >
                   <a
                     href="https://www.linkedin.com/in/abdul-al-roman09/"
@@ -128,8 +128,8 @@ export default function ContactPage() {
             </div>
 
             {/* Right Side - Contact Form */}
-            <form ref={form} onSubmit={sendEmail} className=" px-4 ">
-              <Card className="shadow-2xl border-0 bg-white/80 backdrop-blur-sm">
+            <form ref={form} onSubmit={sendEmail} className="px-4">
+              <Card className="shadow-2xl border-0 bg-card/80 dark:bg-card/90 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="sr-only">Contact Form</CardTitle>
                 </CardHeader>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                       name="user_name"
                       placeholder="Your name"
                       required
-                      className="bg-slate-50 border-slate-200 focus:border-slate-400"
+                      className="bg-input border-muted focus:border-primary dark:bg-input dark:border-muted dark:focus:border-primary"
                     />
                   </div>
 
@@ -154,7 +154,7 @@ export default function ContactPage() {
                       type="email"
                       placeholder="Your email"
                       required
-                      className="bg-slate-50 border-slate-200 focus:border-slate-400"
+                      className="bg-input border-muted focus:border-primary dark:bg-input dark:border-muted dark:focus:border-primary"
                     />
                   </div>
 
@@ -166,7 +166,7 @@ export default function ContactPage() {
                       type="text"
                       placeholder="Your subject"
                       required
-                      className="bg-slate-50 border-slate-200 focus:border-slate-400"
+                      className="bg-input border-muted focus:border-primary dark:bg-input dark:border-muted dark:focus:border-primary"
                     />
                   </div>
 
@@ -178,13 +178,13 @@ export default function ContactPage() {
                       placeholder="Your message"
                       rows={5}
                       required
-                      className="bg-slate-50 border-slate-200 focus:border-slate-400 resize-none"
+                      className="bg-input border-muted focus:border-primary resize-none dark:bg-input dark:border-muted dark:focus:border-primary"
                     />
                   </div>
 
                   <Button
                     type="submit"
-                    className="w-full bg-slate-900 hover:bg-slate-800 text-white py-6 text-lg font-medium"
+                    className="w-full dark:bg-blue-500 text-primary-foreground hover:bg-primary/90 py-6 text-lg font-medium"
                   >
                     <Send className="w-5 h-5 mr-2" />
                     Send

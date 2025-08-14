@@ -2,6 +2,7 @@ import React from "react";
 
 const Education = () => {
   return (
+
     <div className="md:h-screen flex items-center sticky md:w-screen bg-background dark:bg-gray-900 text-foreground dark:text-foreground h-fit px-4">
       <div className="container mx-auto py-10">
         {/* Section Header */}
