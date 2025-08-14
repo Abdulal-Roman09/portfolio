@@ -6,6 +6,7 @@ import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Banner from "@/components/Banner";
 import ContactPage from "./contact/page";
+import Marquee from "@/components/Marquee";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <div className="py-10">
         <Banner />
         <About />
+        <Marquee/>
         <Skills />
 
         <Education />

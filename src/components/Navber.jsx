@@ -1,7 +1,8 @@
 // Navber.jsx
+"use client";
 
 import Image from "next/image";
-import logo from "../../public/logo.png";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -9,13 +10,9 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
@@ -28,8 +25,9 @@ export default function Navber() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b bg-white">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b bg-background text-foreground dark:bg-background dark:text-foreground ">
       <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 md:px-6">
+        
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu */}
@@ -82,17 +80,20 @@ export default function Navber() {
           </Popover>
 
           {/* Logo */}
-         
-    <div className="pr-2">
-       <Link href="/"
-     className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center">
-       <span className="text-white mr-1 pl-2">Roman</span>
-       <span className="w-12 h-8 rounded bg-white text-blac flex items-center pl-1 ">.dev</span></Link>
-    </div>
-       
+          <div className="pr-2">
+            <Link
+              href="/"
+              className="text-sm bg-black dark:bg-white rounded-md p-1 font-semibold flex items-center justify-center"
+            >
+              <span className="text-white dark:text-black mr-1 pl-2">Roman</span>
+              <span className="w-12 h-8 rounded bg-white dark:bg-black text-black dark:text-white flex items-center pl-1">
+                .dev
+              </span>
+            </Link>
+          </div>
         </div>
 
-        {/* Center items */}
+        {/* Center items (desktop menu) */}
         <div className="max-md:hidden">
           <NavigationMenu>
             <NavigationMenuList className="gap-2">
@@ -104,7 +105,7 @@ export default function Navber() {
                       href={link.href}
                       className={`py-1.5 font-medium rounded px-4 ${
                         isActive
-                          ? "bg-black text-white"
+                          ? "bg-primary text-primary-foreground"
                           : "text-muted-foreground hover:text-primary"
                       }`}
                     >
@@ -119,8 +120,14 @@ export default function Navber() {
 
         {/* Right side */}
         <div className="flex items-center gap-2">
-          <Button asChild  className="text-sm" >
-            <a href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view?usp=sharing">Download CV</a>
+          <ThemeToggle />
+          <Button
+            asChild
+            className="text-sm bg-primary text-primary-foreground dark:bg-primary dark:text-primary-foreground"
+          >
+            <a href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view?usp=sharing">
+              Download CV
+            </a>
           </Button>
         </div>
       </div>
