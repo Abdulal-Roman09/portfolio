@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 import { Github, Mail, Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Banner() {
   const socialLinks = [
@@ -33,9 +34,14 @@ export default function Banner() {
     >
       <section className="md:min-h-screen h-fit py-10  w-screen flex items-center">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 container mx-auto px-4">
-          
+
           {/* Left Side */}
-          <div className="flex-1 space-y-6 text-center md:text-left">
+          <motion.div
+            className="flex-1 space-y-6 text-center md:text-left"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
               Hi, I'm <span className="text-blue-500">Abdul Al Roman</span>
             </h1>
@@ -91,10 +97,15 @@ export default function Banner() {
                 Download Resume
               </a>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side */}
-          <div className="flex-1 flex justify-center">
+          <motion.div
+            className="flex-1 flex justify-center"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <div className="relative w-full max-w-[500px] md:max-w-[800px] aspect-square">
               <Image
                 src="https://aakash-sharma.netlify.app/static/media/webdev.4d72dbba32efee3890cef9bcacce7aa7.svg"
@@ -104,7 +115,7 @@ export default function Banner() {
                 priority
               />
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </section>
