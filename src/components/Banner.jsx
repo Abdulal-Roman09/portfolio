@@ -51,8 +51,8 @@ export default function Banner() {
                 <Typewriter
                   words={[
                     "React Developer",
-                    "Full Stack Developer",
-                    "MERN Stack Engineer",
+                    "Frontend Developer",
+                    "Next.js Developer",
                   ]}
                   loop={true}
                   cursor
@@ -86,16 +86,18 @@ export default function Banner() {
               ))}
             </div>
 
-            {/* Resume Button */}
-            <div className="pt-4 flex">
-              <a
-                href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view"
-                download
-                className="flex items-center gap-2 px-6 py-3 bg-black text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition"
-              >
-                <Download size={20} />
-                <span>Download Resume</span>
-              </a>
+            <div className="flex items-center">
+              {/* Resume Button */}
+              <div className="pt-4 w-fit flex items-center">
+                <a
+                  href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view"
+                  download
+                  className="flex items-center gap-2 px-6 py-3 bg-black text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition"
+                >
+                  <Download size={20} />
+                  <span>Download Resume</span>
+                </a>
+              </div>
             </div>
           </motion.div>
 
