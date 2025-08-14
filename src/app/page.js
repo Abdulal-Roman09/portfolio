@@ -11,7 +11,7 @@ import Marquee from "@/components/Marquee";
 const Home = () => {
   return (
     <>
-      <div className="py-10">
+      <div className="pt-10">
         <Banner />
         <About />
         <Marquee/>
