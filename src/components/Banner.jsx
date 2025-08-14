@@ -29,11 +29,11 @@ export default function Banner() {
       className="
         bg-[url('https://aakash-sharma.netlify.app/static/media/cloudBg.f28b5c6961fd82be839c.png')]
         dark:bg-[url('https://aakash-sharma.netlify.app/static/media/cloudDark.51edaa54cabe7b964ae9.png')]
-        bg-cover bg-center transition-colors duration-500
+        bg-cover bg-center transition-colors duration-500 mt-6
       "
     >
       <section className="md:min-h-screen h-fit py-10  w-screen flex items-center">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10 container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 container mx-auto px-4 ">
 
           {/* Left Side */}
           <motion.div

@@ -26,7 +26,7 @@ export default function Navber() {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 border-b bg-background text-foreground dark:bg-background dark:text-foreground"
+      className="fixed top-0 bg-transparent left-0 right-0 z-50 border-b  dark:bg-background dark:text-foreground"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
