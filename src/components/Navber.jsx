@@ -81,7 +81,7 @@ export default function Navber() {
               className="text-sm bg-black dark:bg-white rounded-md p-1 font-semibold flex items-center justify-center"
             >
               <span className="text-white dark:text-black mr-1 pl-2">Roman</span>
-              <span className="w-12 h-8 rounded bg-white dark:bg-black text-black dark:text-white flex items-center pl-3">
+              <span className="w-12 h-8 rounded bg-white dark:bg-blue-600 text-black dark:text-white flex items-center pl-3">
                 .dev
               </span>
             </Link>
