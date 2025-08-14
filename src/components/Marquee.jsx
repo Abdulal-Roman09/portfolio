@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Marquee() {
   return (
-    <div className="w-screen overflow-hidden bg-background py-16 relative">
+    <div className="w-screen overflow-hidden dark:bg-gray-900 py-16 relative">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background z-10" />
 
@@ -25,7 +25,7 @@ export default function Marquee() {
                 WebkitTextStroke: "1px rgb(156 163 175)", // Tailwind gray-400
               }}
             >
-              Flowers & Saints
+              Abdul Al Roman
             </span>
           </div>
         ))}

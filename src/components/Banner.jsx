@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
-import { Github, Mail, Linkedin } from "lucide-react";
+import { Github, Mail, Linkedin, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Banner() {
@@ -34,7 +34,6 @@ export default function Banner() {
     >
       <section className="md:min-h-screen h-fit py-10  w-screen flex items-center">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 container mx-auto px-4 ">
-
           {/* Left Side */}
           <motion.div
             className="flex-1 space-y-6 text-center md:text-left"
@@ -65,10 +64,10 @@ export default function Banner() {
               </span>
             </h2>
 
-            <p className="max-w-xl mx-auto md:mx-0 text-gray-600 dark:text-gray-400 text-lg">
+            <p className="max-w-xl mx-auto md:mx-0 text-gray-600 dark:text-white text-lg">
               I’m passionate about building scalable web applications that
-              improve user experiences and solve real-world problems.
-              Ambitious to keep learning and growing as a developer every day.
+              improve user experiences and solve real-world problems. Ambitious
+              to keep learning and growing as a developer every day.
             </p>
 
             {/* Social Icons */}
@@ -88,13 +87,14 @@ export default function Banner() {
             </div>
 
             {/* Resume Button */}
-            <div className="pt-4">
+            <div className="pt-4 flex">
               <a
                 href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view"
                 download
-                className="px-6 py-3 bg-black text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition"
+                className="flex items-center gap-2 px-6 py-3 bg-black text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition"
               >
-                Download Resume
+                <Download size={20} />
+                <span>Download Resume</span>
               </a>
             </div>
           </motion.div>
@@ -116,7 +116,6 @@ export default function Banner() {
               />
             </div>
           </motion.div>
-
         </div>
       </section>
     </div>
