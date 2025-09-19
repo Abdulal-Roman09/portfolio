@@ -8,7 +8,11 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, Home, User, Code, Mail, Download } from "lucide-react";
@@ -34,7 +38,6 @@ export default function Navber() {
       transition={{ duration: 0.6 }}
     >
       <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 md:px-6">
-
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu */}
@@ -80,7 +83,9 @@ export default function Navber() {
               href="/"
               className="text-sm bg-black dark:bg-white rounded-md p-1 font-semibold flex items-center justify-center"
             >
-              <span className="text-white dark:text-black mr-1 pl-2">Roman</span>
+              <span className="text-white dark:text-black mr-1 pl-2">
+                Roman
+              </span>
               <span className="w-12 h-8 rounded bg-white dark:bg-blue-600 text-black dark:text-white flex items-center pl-3">
                 .dev
               </span>
@@ -100,8 +105,8 @@ export default function Navber() {
                       href={link.href}
                       className={`py-2 px-4 rounded flex items-center gap-2 font-medium ${
                         isActive
-                          ? "bg-primary dark:bg-blue-500 text-primary-foreground"
-                          : "text-black dark:text-muted-foreground hover:text-primary hover:bg-muted-foreground/10"
+                          ? "bg-primary dark:bg-blue-600 text-primary-foreground"
+                          : "text-black dark:text-muted-foreground hover:text-primary dark:hover:bg-blue-500"
                       }`}
                     >
                       {link.label}
@@ -121,9 +126,9 @@ export default function Navber() {
             className="text-sm bg-primary text-primary-foreground hover:bg-blue-600
             dark:bg-blue-600 dark:text-white dark:hover:bg-black"
           >
-            <a href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing">
               <Download />
-              Download CV
+              Download Resume
             </a>
           </Button>
         </div>
