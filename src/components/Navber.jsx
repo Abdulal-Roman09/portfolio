@@ -8,11 +8,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, Home, User, Code, Mail, Download } from "lucide-react";
@@ -31,13 +27,14 @@ export default function Navber() {
   return (
     <motion.header
       className="fixed top-0 left-0 right-0 z-50 border-b 
-                 bg-white/70 backdrop-blur-sm text-black
+                 bg-white/70 backdrop-blur-md text-black
                  dark:bg-background dark:text-foreground"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
       <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 md:px-6">
+
         {/* Left side */}
         <div className="flex items-center gap-2">
           {/* Mobile menu */}
@@ -83,9 +80,7 @@ export default function Navber() {
               href="/"
               className="text-sm bg-black dark:bg-white rounded-md p-1 font-semibold flex items-center justify-center"
             >
-              <span className="text-white dark:text-black mr-1 pl-2">
-                Roman
-              </span>
+              <span className="text-white dark:text-black mr-1 pl-2">Roman</span>
               <span className="w-12 h-8 rounded bg-white dark:bg-blue-600 text-black dark:text-white flex items-center pl-3">
                 .dev
               </span>
