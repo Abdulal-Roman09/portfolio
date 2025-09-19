@@ -8,11 +8,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, Home, User, Code, Mail, Download } from "lucide-react";
@@ -25,36 +21,37 @@ const navigationLinks = [
   { href: "/contact", label: "ContactMe", icon: Mail },
 ];
 
-export default function Navber() {
+export default function Navbar() {
   const pathname = usePathname();
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 border-b 
-                 bg-white/70 backdrop-blur-md text-black
-                 dark:bg-background dark:text-foreground"
+      className="fixed top-0 left-0 right-0 z-50 border-b bg-white/70 backdrop-blur-md text-black dark:bg-background dark:text-foreground"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 md:px-6">
-        {/* Left side */}
+      <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 sm:px-0">
+        {/* Left: Logo + Mobile Menu */}
         <div className="flex items-center gap-2">
-          {/* Mobile menu */}
+          {/* Mobile Hamburger Menu */}
           <Popover>
             <PopoverTrigger asChild>
               <Button
                 aria-label="Toggle menu"
-                className="group size-8 md:hidden text-black dark:text-foreground"
+                className="md:hidden text-black dark:text-foreground"
                 variant="ghost"
                 size="icon"
               >
                 <Menu size={24} />
               </Button>
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-44 p-1 md:hidden">
-              <NavigationMenu className="max-w-none *:w-full">
-                <NavigationMenuList className="flex-col items-start gap-1">
+            <PopoverContent
+              align="start"
+              className="w-44 p-2 md:hidden bg-white dark:bg-gray-900 text-black dark:text-white rounded-lg shadow-lg"
+            >
+              <NavigationMenu className="max-w-none">
+                <NavigationMenuList className="flex flex-col items-start gap-1">
                   {navigationLinks.map((link) => {
                     const isActive = pathname === link.href;
                     return (
@@ -64,7 +61,7 @@ export default function Navber() {
                           className={`py-2 px-3 flex items-center gap-2 w-full rounded ${
                             isActive
                               ? "text-primary font-semibold dark:bg-blue-500"
-                              : "text-black hover:text-primary hover:bg-muted-foreground/10"
+                              : "hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800"
                           }`}
                         >
                           {link.label}
@@ -72,6 +69,11 @@ export default function Navber() {
                       </NavigationMenuItem>
                     );
                   })}
+
+                  {/* Mobile Resume */}
+                  <NavigationMenuItem className="w-full mt-2">
+             
+                  </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
             </PopoverContent>
@@ -81,11 +83,9 @@ export default function Navber() {
           <div className="pr-2">
             <Link
               href="/"
-              className="text-sm bg-black dark:bg-gray-800 rounded-md p-1 font-semibold flex items-center justify-center "
+              className="text-sm bg-black dark:bg-gray-800 rounded-md p-1 font-semibold flex items-center justify-center"
             >
-              <span className="text-white  mr-1 pl-2 ">
-                Roman
-              </span>
+              <span className="text-white mr-1 pl-2">Roman</span>
               <span className="w-12 h-8 rounded bg-white dark:bg-blue-600 text-black dark:text-white flex items-center pl-3">
                 .dev
               </span>
@@ -93,8 +93,8 @@ export default function Navber() {
           </div>
         </div>
 
-        {/* Center items (desktop menu) */}
-        <div className="max-md:hidden">
+        {/* Desktop Menu */}
+        <div className="hidden md:flex gap-4 items-center">
           <NavigationMenu>
             <NavigationMenuList className="flex gap-2">
               {navigationLinks.map((link) => {
@@ -116,19 +116,34 @@ export default function Navber() {
               })}
             </NavigationMenuList>
           </NavigationMenu>
-        </div>
 
-        {/* Right side */}
-        <div className="flex items-center gap-2">
+          {/* Desktop Resume + Theme */}
           <ThemeToggle />
           <Button
             asChild
-            className="text-sm bg-primary text-primary-foreground hover:bg-blue-600
-            dark:bg-blue-600 dark:text-white dark:hover:bg-black transition-colors duration-500 ease-in-out"
+            className="text-sm bg-primary text-primary-foreground hover:bg-blue-600 dark:bg-blue-600 dark:text-white dark:hover:bg-black transition-colors duration-500 ease-in-out"
           >
-            <a href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing">
-              <Download />
-              Download Resume
+            <a
+              href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing"
+              target="_blank"
+            >
+              <Download size={16} /> Download Resume
+            </a>
+          </Button>
+        </div>
+
+        {/* Mobile Theme + Resume */}
+        <div className="flex md:hidden items-center gap-2">
+          <ThemeToggle />
+          <Button
+            asChild
+            className="text-sm bg-primary text-primary-foreground hover:bg-blue-600 dark:bg-blue-600 dark:text-white dark:hover:bg-black transition-colors duration-500 ease-in-out"
+          >
+            <a
+              href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing"
+              target="_blank"
+            >
+              <Download size={16} /> Resume
             </a>
           </Button>
         </div>
