@@ -7,6 +7,7 @@ export function CertificationCard({
   title,
   organization,
   dateObtained,
+  certificateCode, // <--- add this
   description,
   verificationLink,
   skills = [],
@@ -24,7 +25,7 @@ export function CertificationCard({
   };
 
   return (
-    <Card className="w-full  mx-auto border rounded-2xl shadow-md bg-white dark:bg-gray-800 transition-shadow hover:shadow-lg">
+    <Card className="w-full mx-auto rounded-2xl shadow-md bg-white dark:bg-gray-800 transition-shadow hover:shadow-lg">
       <CardHeader className="flex justify-between items-start pb-4 pt-6 px-6">
         <div>
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{title}</h3>
@@ -58,6 +59,19 @@ export function CertificationCard({
             <p className="text-gray-800 dark:text-gray-100 font-medium">{dateObtained}</p>
           </div>
         </div>
+
+        {/* Certificate Code */}
+        {certificateCode && (
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-gray-100 dark:bg-gray-800 rounded-lg">
+              <Award className="h-5 w-5 text-gray-600 dark:text-gray-300" />
+            </div>
+            <div>
+              <p className="text-xs uppercase text-gray-500 dark:text-gray-400">Certificate Code</p>
+              <p className="text-gray-800 dark:text-gray-100 font-medium">{certificateCode}</p>
+            </div>
+          </div>
+        )}
 
         {/* Description */}
         <div className="flex items-start gap-3">
