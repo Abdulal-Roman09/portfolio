@@ -92,7 +92,7 @@ export default function Banner() {
                 <a
                   href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing"
                   download
-                  className="flex items-center gap-2 px-6 py-3 bg-black text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition dark:bg-blue-600 dark:hover:bg-black"
+                  className="flex items-center gap-2 px-6 py-3 bg-black text-white font-medium rounded-lg shadow-md hover:bg-blue-700  dark:bg-blue-600 dark:hover:bg-black transition-colors duration-500 ease-in-out"
                 >
                   <Download size={20} />
                   <span>Download Resume</span>

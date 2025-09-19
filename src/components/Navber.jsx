@@ -81,9 +81,9 @@ export default function Navber() {
           <div className="pr-2">
             <Link
               href="/"
-              className="text-sm bg-black dark:bg-white rounded-md p-1 font-semibold flex items-center justify-center"
+              className="text-sm bg-black dark:bg-gray-800 rounded-md p-1 font-semibold flex items-center justify-center "
             >
-              <span className="text-white dark:text-black mr-1 pl-2">
+              <span className="text-white  mr-1 pl-2 ">
                 Roman
               </span>
               <span className="w-12 h-8 rounded bg-white dark:bg-blue-600 text-black dark:text-white flex items-center pl-3">
@@ -124,7 +124,7 @@ export default function Navber() {
           <Button
             asChild
             className="text-sm bg-primary text-primary-foreground hover:bg-blue-600
-            dark:bg-blue-600 dark:text-white dark:hover:bg-black"
+            dark:bg-blue-600 dark:text-white dark:hover:bg-black transition-colors duration-500 ease-in-out"
           >
             <a href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing">
               <Download />
