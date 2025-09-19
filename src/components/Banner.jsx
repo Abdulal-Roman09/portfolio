@@ -79,7 +79,7 @@ export default function Banner() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full shadow-2xl flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition-all duration-200"
+                  className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full shadow-2xl flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-500 hover:scale-110 transition-all duration-200"
                 >
                   <Icon size={20} />
                 </a>
@@ -90,9 +90,9 @@ export default function Banner() {
               {/* Resume Button */}
               <div className="pt-4 w-fit flex items-center">
                 <a
-                  href="https://drive.google.com/file/d/15dNOQzoQ0GUTefFNDuC2R8Kl2r97yAqK/view"
+                  href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing"
                   download
-                  className="flex items-center gap-2 px-6 py-3 bg-black text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition"
+                  className="flex items-center gap-2 px-6 py-3 bg-black text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition dark:bg-blue-600 dark:hover:bg-black"
                 >
                   <Download size={20} />
                   <span>Download Resume</span>
