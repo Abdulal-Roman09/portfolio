@@ -18,7 +18,7 @@ const navigationLinks = [
   { href: "/", label: "Home", icon: Home },
   { href: "/about", label: "About", icon: User },
   { href: "/projects", label: "Projects", icon: Code },
-  { href: "/contact", label: "ContactMe", icon: Mail },
+  { href: "/contact", label: "Contact", icon: Mail },
 ];
 
 export default function Navbar() {
@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 border-b bg-white/70 backdrop-blur-md text-black dark:bg-background dark:text-foreground"
+      className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-white/70 backdrop-blur-md text-black dark:border-gray-700 dark:bg-background dark:text-foreground"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -69,11 +69,6 @@ export default function Navbar() {
                       </NavigationMenuItem>
                     );
                   })}
-
-                  {/* Mobile Resume */}
-                  <NavigationMenuItem className="w-full mt-2">
-             
-                  </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
             </PopoverContent>
@@ -94,30 +89,30 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-4 items-center">
-          <NavigationMenu>
-            <NavigationMenuList className="flex gap-2">
-              {navigationLinks.map((link) => {
-                const isActive = pathname === link.href;
-                return (
-                  <NavigationMenuItem key={link.href}>
-                    <NavigationMenuLink
-                      href={link.href}
-                      className={`py-2 px-4 rounded flex items-center gap-2 font-medium ${
-                        isActive
-                          ? "bg-primary dark:bg-blue-600 text-primary-foreground"
-                          : "text-black dark:text-muted-foreground hover:text-primary dark:hover:bg-blue-500"
-                      }`}
-                    >
-                      {link.label}
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                );
-              })}
-            </NavigationMenuList>
-          </NavigationMenu>
+        <NavigationMenu className="hidden md:flex">
+          <NavigationMenuList className="flex gap-2">
+            {navigationLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <NavigationMenuItem key={link.href}>
+                  <NavigationMenuLink
+                    href={link.href}
+                    className={`py-2 px-4 rounded flex items-center gap-2 font-medium ${
+                      isActive
+                        ? "bg-primary dark:bg-blue-600 text-primary-foreground"
+                        : "text-black dark:text-muted-foreground hover:text-primary dark:hover:bg-blue-500"
+                    }`}
+                  >
+                    {link.label}
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              );
+            })}
+          </NavigationMenuList>
+        </NavigationMenu>
 
-          {/* Desktop Resume + Theme */}
+        {/* Right: Desktop Theme + Resume */}
+        <div className="hidden md:flex gap-4 items-center">
           <ThemeToggle />
           <Button
             asChild
@@ -126,6 +121,7 @@ export default function Navbar() {
             <a
               href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Download size={16} /> Download Resume
             </a>
@@ -142,6 +138,7 @@ export default function Navbar() {
             <a
               href="https://drive.google.com/file/d/1w1IcdDvClGpiXyvTDdDGKmXNrL-ZxT36/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Download size={16} /> Resume
             </a>

@@ -7,7 +7,7 @@ export function CertificationCard({
   title,
   organization,
   dateObtained,
-  certificateCode, // <--- add this
+  certificateCode,
   description,
   verificationLink,
   skills = [],

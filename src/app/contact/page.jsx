@@ -116,7 +116,7 @@ export default function ContactPage() {
 
             {/* Right Side - Contact Form */}
             <form ref={form} onSubmit={sendEmail} className="px-4">
-              <Card className="shadow-2xl border-0 bg-card/80 dark:bg-card/90 backdrop-blur-sm">
+              <Card className="shadow-2xl border-0 bg-card/80 dark:bg-gray-800 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="sr-only">Contact Form</CardTitle>
                 </CardHeader>
