@@ -20,14 +20,7 @@ const certifications = [
     skills: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
     status: "active",
   },
-  {
-    title: "Python for Data Science",
-    organization: "edX",
-    dateObtained: "March 2023",
-    description: "Gained expertise in Python programming and data analysis libraries.",
-    skills: ["Python", "Pandas", "NumPy", "Matplotlib"],
-    status: "expired",
-  },
+ 
 ];
 
 const CertificationContainer = () => {
