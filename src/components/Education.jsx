@@ -50,7 +50,7 @@ const Education = () => {
                 <p className="text-sm text-gray-500 dark:text-gray-400">Completed</p>
               </div>
               <div className="text-right">
-                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-500 text-white shadow-lg">
+                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-green-500 text-white shadow-lg">
                   Completed
                 </span>
               </div>
@@ -65,7 +65,7 @@ const Education = () => {
 
           {/* Academic Goals */}
           <div className="bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 border border-blue-600/30 shadow-xl relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-blue-800/10"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-300/10 to-blue-300/10"></div>
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-4">
                 <FaBullseye className="text-blue-600 w-5 h-5" />
