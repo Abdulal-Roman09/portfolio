@@ -1,4 +1,5 @@
 "use client";
+import { Github, Link } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -78,7 +79,7 @@ export default function Project1UI() {
       {/* Project Info Card */}
       <div className="container mx-auto p-6 rounded-lg shadow-2xl bg-white dark:bg-gray-900 transition-colors">
         <div className="text-center mb-6">
-          <h1 className="text-4xl font-extrabold text-blue-700 dark:text-blue-500 mb-2">
+          <h1 className="text-4xl font-bold  mb-2">
             Project 1
           </h1>
           <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">
@@ -88,14 +89,14 @@ export default function Project1UI() {
 
         <div className="space-y-6 text-gray-800 dark:text-gray-300">
           <div>
-            <h2 className="font-semibold text-lg mb-1 border-b-2 border-blue-500 dark:border-blue-500 inline-block pb-1">
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-black dark:border-blue-500 inline-block pb-1">
               Name:
             </h2>
             <p className="text-md">Questly</p>
           </div>
 
           <div>
-            <h2 className="font-semibold text-lg mb-1 border-b-2 border-blue-500 dark:border-blue-500 inline-block pb-1">
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-black dark:border-blue-500 inline-block pb-1">
               Description:
             </h2>
             <p className="text-md leading-relaxed">
@@ -108,10 +109,10 @@ export default function Project1UI() {
           </div>
 
           <div>
-            <h2 className="font-semibold text-lg mb-1 border-b-2 border-blue-500 dark:border-blue-500 inline-block pb-1">
+            <h2 className="font-semibold text-lg mb-1 border-b-2 border-black dark:border-blue-500 inline-block pb-1">
               Technologies:
             </h2>
-            <p className="text-md italic text-blue-600 dark:text-blue-400">
+            <p className="text-md italic text-black dark:text-blue-400">
               React, Firebase Authentication, Real-time Database, Dynamic
               Dashboards
             </p>
@@ -175,16 +176,16 @@ export default function Project1UI() {
               href="https://github.com/Abdulal-Roman09/Questly"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-gray-800 text-white dark:bg-gray-700 dark:text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition"
-            >
+              className="px-4 py-2 bg-gray-800 text-white dark:bg-gray-700 dark:text-white rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition flex items-center gap-2"
+            ><Github/>
               GitHub
             </a>
             <a
               href="https://b11-a11.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-blue-600 text-white dark:bg-blue-500 rounded-lg hover:bg-blue-500 dark:hover:bg-blue-400 transition"
-            >
+              className="px-4 py-2 bg-blue-600 text-white dark:bg-blue-500 rounded-lg hover:bg-blue-500 dark:hover:bg-blue-400 transition flex items-center gap-4"
+            > <Link/>
               Live Demo
             </a>
           </div>
