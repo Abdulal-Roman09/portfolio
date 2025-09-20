@@ -23,7 +23,7 @@ const Education = () => {
                     Bachelor of Science in Engineering (BSc Engineering)
                   </h3>
                 </div>
-                <p className="dark:text-blue-600  mb-2 font-medium">Computer Science & Engineering</p>
+                <p className="dark:text-blue-400  mb-2 font-medium">Computer Science & Engineering</p>
                 <p className="text-sm text-black dark:text-gray-400">Currently Pursuing</p>
               </div>
               <div className="text-right">
