@@ -27,7 +27,7 @@ const Education = () => {
                 <p className="text-sm text-black dark:text-gray-400">Currently Pursuing</p>
               </div>
               <div className="text-right">
-                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-black dark:bg-blue-600 text-white shadow-lg">
+                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-black dark:bg-blue-500 text-white shadow-lg">
                   In Progress
                 </span>
               </div>
@@ -50,7 +50,7 @@ const Education = () => {
                     Higher Secondary Certificate (HSC)
                   </h3>
                 </div>
-                <p className="dark:text-blue-600  mb-2 font-medium">Science Group</p>
+                <p className="dark:text-blue-500  mb-2 font-medium">Science Group</p>
                 <p className="text-sm text-black dark:text-gray-400">Completed</p>
               </div>
               <div className="text-right">
