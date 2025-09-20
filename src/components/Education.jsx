@@ -68,7 +68,7 @@ const Education = () => {
           </div>
 
           {/* Academic Goals */}
-          <div className="bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 border border-blue-600/30 shadow-xl relative overflow-hidden">
+          <div className="bg-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 border border-blue-600/30 shadow-xl relative overflow-hidden hover:shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-300/10 to-blue-300/10"></div>
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-4">
