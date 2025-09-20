@@ -5,41 +5,58 @@ import { useEffect, useState } from "react";
 const carouselItems = [
   {
     img: "https://i.ibb.co/7dmZ3pjX/Screenshot-2025-08-11-071409.png",
-    title: "Forest Serenity",
-    des: "Discover the peace and beauty of the forest. A perfect place to escape the everyday hustle and reconnect with nature.",
   },
   {
     img: "https://i.ibb.co/NnsLzRFq/Screenshot-2025-08-11-071438.png",
-    title: "Golden Canopy",
-    des: "Bask in the warmth and beauty of the golden leaves against a clear blue sky. A perfect spot for a peaceful retreat and reflection.",
   },
   {
     img: "https://i.ibb.co/Mx9j2fqq/Screenshot-2025-08-11-071623.png",
-    title: "Urban Exploration",
-    des: "Venture into the hidden corners of the city and uncover the beauty of forgotten urban landscapes. A thrilling escape into the depths of urban architecture.",
   },
   {
     img: "https://i.ibb.co/kgGffb2K/Screenshot-2025-08-11-071659.png",
-    title: "Industrial Mystery",
-    des: "Explore the enigmatic charm of industrial structures. A perfect setting for those with a sense of adventure and an eye for urban beauty.",
   },
   {
     img: "https://i.ibb.co/Kjd4W2b4/Screenshot-2025-08-11-071508.png",
-    title: "Blossom Bliss",
-    des: "Revel in the vibrant colors and delicate petals of a blossoming field. An ideal retreat for those seeking a burst of natural beauty and serenity.",
   },
 ];
 
 const technologies = [
-  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
-  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  {
+    name: "HTML5",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS3",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "React",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    name: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Express",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    name: "Firebase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+  },
+  {
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
 ];
 
 export default function Project1UI() {
@@ -82,7 +99,11 @@ export default function Project1UI() {
               Description:
             </h2>
             <p className="text-md leading-relaxed">
-              An interactive React-based travel platform where users can post queries, share personalized recommendations, and manage profiles securely using Firebase Authentication. The site emphasizes real-time updates and dynamic dashboards to foster an engaged traveler community.
+              An interactive React-based travel platform where users can post
+              queries, share personalized recommendations, and manage profiles
+              securely using Firebase Authentication. The site emphasizes
+              real-time updates and dynamic dashboards to foster an engaged
+              traveler community.
             </p>
           </div>
 
@@ -91,7 +112,8 @@ export default function Project1UI() {
               Technologies:
             </h2>
             <p className="text-md italic text-blue-600 dark:text-blue-400">
-              React, Firebase Authentication, Real-time Database, Dynamic Dashboards
+              React, Firebase Authentication, Real-time Database, Dynamic
+              Dashboards
             </p>
           </div>
         </div>
@@ -104,7 +126,9 @@ export default function Project1UI() {
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-500 ease-linear ${
-                index === currentSlider ? "opacity-100 visible" : "opacity-0 invisible"
+                index === currentSlider
+                  ? "opacity-100 visible"
+                  : "opacity-0 invisible"
               }`}
             >
               <Image
@@ -130,7 +154,9 @@ export default function Project1UI() {
               width={1200}
               height={600}
               className={`h-6 w-10 bg-black/20 sm:h-8 md:h-12 md:w-20 ${
-                currentSlider === index ? "opacity-100 ring ring-blue-500" : "opacity-60"
+                currentSlider === index
+                  ? "opacity-100 ring ring-blue-500"
+                  : "opacity-60"
               } box-content cursor-pointer rounded-md md:rounded-lg`}
               alt={slide.title}
             />
@@ -141,7 +167,9 @@ export default function Project1UI() {
       {/* Links & Technologies */}
       <div className="space-y-6">
         <div className="flex flex-col items-center justify-center py-5">
-          <p className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 dark:text-gray-300">Links</p>
+          <p className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 dark:text-gray-300">
+            Links
+          </p>
           <div className="flex gap-4 py-4">
             <a
               href="https://github.com/Abdulal-Roman09/Questly"
