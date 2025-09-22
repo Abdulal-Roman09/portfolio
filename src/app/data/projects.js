@@ -12,10 +12,10 @@ export const projects = [
   },
   {
     id: "2",
-    title: "Plant Shop",
+    title: "Kobi Jashimuddin Hall (Hostel Managemenst Systems",
     description:
-      "A modern e-commerce platform for plant enthusiasts, built with the MERN stack.",
-    technologies: "React, Tailwind CSS, Express.js, MongoDB, Node.js",
+      "A comprehensive hostel management system designed to streamline meal planning, membership tracking, and payment processing. Built with a clean, responsive interface focusing on user-friendly navigation. Features include real-time meal updates, secure payment integration, and role-based dashboards for efficient management by hostel administrators and residents.",
+    technologies: "React, Tailwind CSS, Express.js, MongoDB, Node.js,Firebase",
     liveLink: "https://yourprojectlink.com",
     githubLinkClient: "https://yourprojectlink.com",
     githubLinkServer: "https://yourprojectlink.com",
