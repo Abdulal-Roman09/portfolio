@@ -9,6 +9,7 @@ import ContactPage from "./contact/page";
 import Marquee from "@/components/Marquee";
 import { CertificationCard } from "@/components/CertificationCard";
 import CertificationContainer from "@/components/CertificationContainer";
+import ProjectsContainer from "@/components/ProjectsContainer";
 
 const Home = () => {
   return (
@@ -21,7 +22,8 @@ const Home = () => {
         <Education />
         {/* <CertificationCard/> */}
         <CertificationContainer/>
-        <Project />
+        {/* <Project /> */}
+        <ProjectsContainer/>
         <ContactPage/>
       </div>
     </>
