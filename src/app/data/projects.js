@@ -22,10 +22,12 @@ export const projects = [
   },
   {
     id: "3",
-    title: "Education Platform",
+    title: "Salad Flavaro",
     description:
-      "A learning management system (LMS) built with Next.js, offering course management, authentication, and dashboards.",
-    technologies: "Next.js, Tailwind CSS, Firebase, Express.js, MongoDB, Node.js",
+      "A modern restaurant blog and ordering platform built with Node.js, Express, and MongoDB. Features include comprehensive menu management, customer reviews, and an intuitive ordering system designed to provide an engaging user experience and efficient backend management for restaurant owners.",
+
+    technologies:
+      "React.js, Tailwind CSS, Firebase, Express.js, MongoDB, Node.js",
     liveLink: "https://yourprojectlink.com",
     githubLinkClient: "https://yourprojectlink.com",
     githubLinkServer: "https://yourprojectlink.com",
