@@ -23,7 +23,7 @@ const Home = () => {
         {/* <CertificationCard/> */}
         <CertificationContainer/>
         {/* <Project /> */}
-        <ProjectsContainer/>
+        {/* <ProjectsContainer/> */}
         <ContactPage/>
       </div>
     </>
