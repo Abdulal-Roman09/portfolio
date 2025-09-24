@@ -7,8 +7,12 @@ const Education = () => {
       <div className="container mx-auto py-10">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">Education</h1>
-          <p className="text-black dark:text-gray-300 text-lg">My academic journey and qualifications</p>
+          <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
+            Education
+          </h1>
+          <p className="text-lg text-black dark:text-gray-300">
+            My academic journey and qualifications
+          </p>
           <div className="w-24 h-1 bg-black dark:bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -23,8 +27,12 @@ const Education = () => {
                     Bachelor of Science in Engineering (BSc Engineering)
                   </h3>
                 </div>
-                <p className="dark:text-blue-400  mb-2 font-medium">Computer Science & Engineering</p>
-                <p className="text-sm text-black dark:text-gray-400">Currently Pursuing</p>
+                <p className="dark:text-blue-400 mb-2 font-medium">
+                  Computer Science & Engineering
+                </p>
+                <p className="text-sm text-black dark:text-gray-400">
+                  Currently Pursuing
+                </p>
               </div>
               <div className="text-right">
                 <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-black dark:bg-blue-500 text-white shadow-lg">
@@ -50,7 +58,9 @@ const Education = () => {
                     Higher Secondary Certificate (HSC)
                   </h3>
                 </div>
-                <p className="dark:text-blue-500  mb-2 font-medium">Science Group</p>
+                <p className="dark:text-blue-500 mb-2 font-medium">
+                  Science Group
+                </p>
                 <p className="text-sm text-black dark:text-gray-400">Completed</p>
               </div>
               <div className="text-right">
@@ -59,7 +69,7 @@ const Education = () => {
                 </span>
               </div>
             </div>
-            <div className="border-l-4 border-black  pl-6 bg-gray-50 dark:bg-gray-900/50 rounded-r-lg p-4">
+            <div className="border-l-4 border-black pl-6 bg-gray-50 dark:bg-gray-900/50 rounded-r-lg p-4">
               <p className="text-black dark:text-gray-300 leading-relaxed">
                 Successfully completed Higher Secondary Certificate with focus on Science subjects, building a strong
                 foundation in mathematics, physics, and analytical thinking.
@@ -68,12 +78,14 @@ const Education = () => {
           </div>
 
           {/* Academic Goals */}
-          <div className="bg- dark:bg-gray-800 rounded-xl p-6 border  shadow-xl relative overflow-hidden hover:shadow-2xl">
+          <div className="bg-gray-100 dark:bg-gray-900 rounded-xl p-6 border border-gray-300 dark:border-gray-700 shadow-xl hover:shadow-2xl relative overflow-hidden transition-all duration-300">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-300/10 to-blue-300/10"></div>
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-4">
                 <FaBullseye className="text-black dark:text-blue-600 w-5 h-5" />
-                <h3 className="text-xl font-semibold text-black dark:text-white">Academic Goals</h3>
+                <h3 className="text-xl font-semibold text-black dark:text-white">
+                  Academic Goals
+                </h3>
               </div>
               <p className="text-black dark:text-gray-300 leading-relaxed">
                 Currently working towards completing my BSc Engineering degree in Computer Science, with a focus on
