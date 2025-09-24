@@ -1,9 +1,91 @@
 // data/projects.js
 export const projects = [
   {
+    id: "2",
+    title: "Hostel Management System",
+    name: "Kobi Jashimuddin Hall",
+    image: "https://i.ibb.co.com/bRFh6Ws9/Screenshot-2025-08-11-091316.png",
+    description:
+      "This system enables students to log in, view and review meals, while administrators can manage student data, meals, and food reviews efficiently — built using the MERN stack.",
+    technologies: [
+      {
+        name: "HTML5",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS3",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "Node.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        name: "Express",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      },
+      {
+        name: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        name: "Shadcn UI",
+        icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", // official shadcn logo
+      },
+      {
+        name: "Axios",
+        icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/axios.svg",
+      },
+      {
+        name: "React Query",
+        icon: "https://raw.githubusercontent.com/TanStack/query/main/media/emblem-light.svg",
+      },
+      {
+        name: "React Hook Form",
+        icon: "https://react-hook-form.com/images/logo/react-hook-form-logo-only.png",
+      },
+      {
+        name: "Git",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        name: "GitHub",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+      {
+        name: "Git",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        name: "Vercel",
+        icon: "https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg",
+      },
+    ],
+    liveLink: "https://golden-pegasus-af7e4b.netlify.app/",
+    githubLinkClient: "https://github.com/Abdulal-Roman09/Hostel-Management",
+    githubLinkServer:
+      "https://github.com/Abdulal-Roman09/Hostel-Management-Server",
+    carouselItems: [
+      { img: "https://i.ibb.co/bRFh6Ws9/Screenshot-2025-08-11-091316.png" },
+      { img: "https://i.ibb.co/kNGBhr5/Screenshot-2025-08-11-091633.png" },
+      { img: "https://i.ibb.co/dwdFbHNy/Screenshot-2025-08-11-091437.png" },
+      { img: "https://i.ibb.co/qMMZbydm/Screenshot-2025-08-11-091530.png" },
+      { img: "https://i.ibb.co/qM300PPn/Screenshot-2025-08-11-091556.png" },
+    ],
+  },
+  {
     id: "1",
     title: " Product Recommendation",
     name: "Questly",
+    image: "https://i.ibb.co.com/NnsLzRFq/Screenshot-2025-08-11-071438.png",
     description:
       "An interactive React-based platform where users can post queries, share personalized recommendations, and manage profiles securely with Firebase Authentication.",
     technologiesTitel:
@@ -45,6 +127,14 @@ export const projects = [
         name: "Git",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
       },
+      {
+        name: "GitHub",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+      {
+        name: "Netlify",
+        icon: "https://www.netlify.com/v3/img/components/logomark.png",
+      },
     ],
     liveLink: "https://b11-a11.netlify.app/",
     githubLinkClient: "https://github.com/Abdulal-Roman09/Questly",
@@ -58,66 +148,12 @@ export const projects = [
       { img: "https://i.ibb.co/Kjd4W2b4/Screenshot-2025-08-11-071508.png" },
     ],
   },
-  {
-    id: "2",
-    title: "Hostel Management System",
-    name: "Kobi Jashimuddin Hall",
-    description:
-      "This system enables students to log in, view and review meals, while administrators can manage student data, meals, and food reviews efficiently — built using the MERN stack.",
-    technologies: [
-      {
-        name: "HTML5",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-      },
-      {
-        name: "CSS3",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-      },
-      {
-        name: "JavaScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-      },
-      {
-        name: "React",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      },
-      {
-        name: "Node.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      },
-      {
-        name: "Express",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-      },
-      {
-        name: "MongoDB",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-      },
-      {
-        name: "Firebase",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-      },
-      {
-        name: "Git",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      },
-    ],
-    liveLink: "https://golden-pegasus-af7e4b.netlify.app/",
-    githubLinkClient: "https://github.com/Abdulal-Roman09/Hostel-Management",
-    githubLinkServer:
-      "https://github.com/Abdulal-Roman09/Hostel-Management-Server",
-    carouselItems: [
-      { img: "https://i.ibb.co/bRFh6Ws9/Screenshot-2025-08-11-091316.png" },
-      { img: "https://i.ibb.co/kNGBhr5/Screenshot-2025-08-11-091633.png" },
-      { img: "https://i.ibb.co/dwdFbHNy/Screenshot-2025-08-11-091437.png" },
-      { img: "https://i.ibb.co/qMMZbydm/Screenshot-2025-08-11-091530.png" },
-      { img: "https://i.ibb.co/qM300PPn/Screenshot-2025-08-11-091556.png" },
-    ],
-  },
+
   {
     id: "3",
     title: "Salad Restaurant App",
     name: "SaladFlavaro",
+    image: "https://i.ibb.co.com/DDRsZwKL/Screenshot-2025-08-12-061426.png",
     description:
       "A modern restaurant blog and ordering platform built with Node.js, Express, and MongoDB. Features include comprehensive menu management, customer reviews, and an intuitive ordering system designed to provide an engaging user experience and efficient backend management for restaurant owners.",
     technologies: [
@@ -156,6 +192,14 @@ export const projects = [
       {
         name: "Git",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        name: "GitHub",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      },
+      {
+        name: "Netlify",
+        icon: "https://www.netlify.com/v3/img/components/logomark.png",
       },
     ],
     liveLink: "https://whimsical-jelly-bedd51.netlify.app/",
