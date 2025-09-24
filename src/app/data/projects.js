@@ -5,6 +5,8 @@ export const projects = [
     title: "Questly (Product Recommendation)",
     description:
       "An interactive React-based platform where users can post queries, share personalized recommendations, and manage profiles securely with Firebase Authentication.",
+    technologiesTitel:
+      "React, Firebase Authentication, Real-time Database, Dynamic Dashboards",
     technologies: [
       {
         name: "HTML5",
