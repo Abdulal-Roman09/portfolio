@@ -22,7 +22,6 @@ const Home = () => {
         <Education />
         <CertificationContainer />
         <ProjectsContainer projects={projects} />
-
         <ContactPage />
       </div>
     </>

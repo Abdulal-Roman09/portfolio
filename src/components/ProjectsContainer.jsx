@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ProjectsContainer = ({ projects }) => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10">
+    <div className="container mx-auto  py-10">
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div
@@ -21,7 +21,7 @@ const ProjectsContainer = ({ projects }) => {
 
             <Link
               href={`/projects/${project.id}`}
-              className="mt-auto inline-block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+              className="mt-auto inline-block text-center bg-black dark:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
             >
               বিস্তারিত দেখুন
             </Link>
