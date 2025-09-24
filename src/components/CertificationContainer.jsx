@@ -7,18 +7,23 @@ const certifications = [
     organization: "Programming Hero",
     dateObtained: "Aug 2025",
     certificateCode: "WEB11-2386",
+    duration: "6 Mounths",
+    mode: "Online",
     description:
       "Completed a comprehensive React course covering Hooks, Redux, and project-based learning.",
     verificationLink:
       "https://drive.google.com/file/d/1kj7-nj6r6hIUEjRTmER5MqagGYX8Pm5Y/view",
     skills: ["React", "Html", "JavaScript", "Css"],
     status: "active",
+    image: "https://i.ibb.co.com/nM7YGbP6/Screenshot-2025-09-24-122253.png",
   },
   {
     title: "Object-Oriented Programming in Java",
     organization: "Simplilearn",
     dateObtained: "3rd September 2025",
     certificateCode: "8907132",
+    duration: "3 Mounths",
+    mode: "Online",
     description:
       "Learned object-oriented programming concepts in JavaScript including classes, objects, inheritance, encapsulation, and polymorphism.",
     verificationLink:
@@ -33,6 +38,7 @@ const certifications = [
       "Polymorphism",
     ],
     status: "active",
+    image: "https://i.ibb.co.com/Q7W863Cr/Screenshot-2025-09-24-122224.png",
   },
 ];
 

@@ -3,7 +3,8 @@ import Link from "next/link";
 
 const ProjectsContainer = ({ projects }) => {
   return (
-    <div className="container mx-auto  py-10">
+<div className="dark:bg-gray-900  ">
+      <div className="container mx-auto dark:bg-gray-900  py-10">
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div
@@ -29,6 +30,7 @@ const ProjectsContainer = ({ projects }) => {
         ))}
       </div>
     </div>
+</div>
   );
 };
 
